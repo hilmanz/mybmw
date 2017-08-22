@@ -1,0 +1,117 @@
+{$navigation}
+<div id="promotionDetail">
+    <section id="BMW5Series" class="section">
+        <div class="thecontent" style="padding:70px 0 70px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-10 col-lg-10 promocontent">
+                      <div class="heading">
+                        <h2>DRIVING A MOVEMENT.</h2>
+                        <h3 style="margin:0 0 20px 0;">THE BMW 5 SERIES DIESEL. LIMITED.</h3>
+                        <p>BMW Indonesia, as the official automotive partner of  the 5th Extraordinary Summit of the Organization of Islamic Cooperation, is offering an exclusive package on a limited number of the BMW 5 Series chauffeur vehicles utilized during the event.</p>
+                        <p style="margin-top:50px">
+                            <ul>
+                                <li><i class="icon-radio-button-on"></i>&nbsp; &nbsp; Luxury Line.</li>
+                                <li><i class="icon-radio-button-on"></i>&nbsp; &nbsp; iDrive Touch Controller.</li>
+                                <li><i class="icon-radio-button-on"></i>&nbsp; &nbsp; BMW Navigation system Professional.</li>
+                                <li><i class="icon-radio-button-on"></i>&nbsp; &nbsp; 18" light alloy wheels turbine styling 452.</li>
+                                <li><i class="icon-radio-button-on"></i>&nbsp; &nbsp; 8-speed Steptronic transmission.</li>
+                            </ul>
+                        </p>
+                      </div>
+
+
+                      <div class="bottomtexts" style="margin-top:100px">
+                          <div class="row">
+                              <div class="col-xs-12 col-md-12 col-lg-12">
+                                  <div class="row">
+                                      <div class="col-xs-10 col-md-3">
+                                        <address>
+                                          <strong>PT Astra Autoprima</strong><br>
+                                          Jl. Gaya Motor Selatan No. 1<br>
+                                          Jakarta Utara, 14330<br>
+                                          <abbr title="Phone">Tel:</abbr> (021) 658 35225
+                                        </address>
+                                      </div>
+                                      <div class="col-xs-10 col-md-3">
+                                        <address>
+                                          <strong>PT Tunas Asset Sarana</strong><br>
+                                          Jl. Hayam Wuruk No. 51<br>
+                                          Jakarta Barat, 11169<br>
+                                          <abbr title="Phone">Tel:</abbr> (021) 626 0775
+                                        </address>
+                                      </div>
+                                      <div class="col-xs-10 col-md-3">
+                                        <address>
+                                          <strong>PT  Eurokars Prima Indonesia</strong><br>
+                                          Jl. Panjang No. 6 <br>
+                                          Jakarta Barat, 11530<br>
+                                          <abbr title="Phone">Tel:</abbr> (021) 535 8000
+                                        </address>
+                                      </div>
+                                      <div class="col-xs-10 col-md-3">
+                                        <address>
+                                          <strong>PT  Bestindo Car Utama</strong><br>
+                                          <small>Jl. Jend. Sudirman Blok B6 No. 1</small><br>
+                                          Tangerang, 15224<br>
+                                          <abbr title="Phone">Tel:</abbr> (021) 7486 8000
+                                        </address>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div><!-- end .bottomtexts -->
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+            </div><!-- end .container -->
+        </div><!-- end .thecontent -->
+    </section>
+</div>
+
+<div class="social">
+<!--     <a class="facebookshare"  target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=THE BMW X1&p[url]={$basedomain}programs/BMWX1&p[summary]=THE BMW X1. NOW STARTING FROM IDR 599 MILLION ON THE ROAD. More info on {$basedomain}programs/BMWX1&p[images][0]={$basedomain}assets/images/THEBMWX1.jpg" data-url="{$basedomain}programs/BMWX1"> <i class="icon-facebook">&nbsp;</i></a> -->
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}programs/BMWX1','{$basedomain}assets/images/THEBMWX1.jpg','','THE BMW X1. NOW STARTING FROM IDR 599 MILLION ON THE ROAD. More info on {$basedomain}programs/BMWX1')"><i class="icon-facebook">&nbsp;</i></a>
+	<a class="twittershare" href="http://twitter.com/share?text=THE BMW X1. NOW STARTING FROM IDR 599 MILLION ON THE ROAD. More info on &url={$basedomain}programs/BMWX1"  target="_blank"><i class="icon-twitter">&nbsp;</i></a>
+</div>
+<footer id="footer">
+{$footer}
+</footer>
+
+<script>
+{literal}
+$(document).ready(function(){
+			$(".twittershare").on("click", function(){
+			var  typenya = 2;
+
+				$.ajax({
+                        'type': 'POST',
+                        'url': basedomain+'tracking',
+                        'data': {typenya:typenya},
+						'dataType':'json'
+
+					})
+				});
+			});
+{/literal}
+</script>
+<script>
+{literal}
+
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: 'feed',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+
+
+			});
+
+		}
+{/literal}
+</script>

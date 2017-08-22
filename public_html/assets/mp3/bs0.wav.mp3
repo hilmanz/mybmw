@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<title>Multiplayer Piano</title>
+		<meta name="description" content="An online piano you can play alone or with others in real-time. MIDI support, 88 keys, velocity sensitive.  You can show off your skill or chat while listening to others play."/>
+		<link rel="stylesheet" href="/screen.css"/>
+		<meta name="propeller" content="4f8a376012340ef2e77e31ef21aeebf6" />
+	</head>
+	<body>
+
+		<div id="social">
+			<div id="like-button">
+				<div id="fb-root"></div>
+				<div class="fb-like" data-href="http://www.facebook.com/MultiplayerPiano" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+			</div>
+			<div id="more-button"></div>
+		</div>
+
+		<div id="chat">
+			<ul></ul>
+			<input placeholder="You can chat with this thing." class="translate" maxlength="512"/>
+		</div>
+
+		<div id="names"></div>
+
+		<div id="piano"></div>
+
+		<div id="cursors"></div>
+
+		<noscript>
+			<center>
+				<p>
+					Multiplayer Piano is an online, full 88-key piano you can play alone or with others in real-time.  MIDI input is supported via midibridge-js (java) so you can really play on this thing.  You should be able to hear some seriously talented piano players performing here!  Join in or just chat and listen.
+				</p>
+				<p>
+					For good performance, Chrome is highly recommended.  Other browsers do not provide the requisite Web Audio API, with the exception of a very recent Nightly Firefox build which is still in beta, and you will get poor performance using a Flash fallback.
+				</p>
+				<p>
+					Of course, first you need to <a href="http://www.enable-javascript.com/" class="link">Enable Javascript</a> or it won't do anything...!
+				</p>
+			</center>
+		</noscript>
+
+		<div id="bottom">
+			<div class="relative">
+				<div id="room">
+					<div class="info"></div>
+					<div class="expand"></div>
+					<div class="more">
+						<div class="new translate">New Room...</div>
+					</div>
+				</div>
+				<div id="new-room-btn" class="ugly-button translate">New Room...</div>
+				<div id="midi-btn" class="ugly-button translate">MIDI</div>
+				<div id="play-alone-btn" class="ugly-button">Play Alone</div>
+				<div id="room-settings-btn" class="ugly-button">Room Settings</div>
+				<div id="status"></div>
+				<div id="volume"></div>
+				<div id="volume-label">volume</div>
+				<div id="quota">
+					<div class="value"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal">
+			<div class="bg"></div>
+			<div id="modals">
+				<div id="new-room" class="dialog">
+					<p><input type="text" name="name" placeholder="room name" class="text translate" maxlength="512"/></p>
+					<p><label><input type="checkbox" name="visible" class="checkbox translate" checked>Visible (open to everyone)</label></p>
+					</label></p>
+					<button class="submit">go</button>
+				</div>
+				<div id="room-settings" class="dialog">
+					<p><div class="ugly-button drop-crown">Drop crown</div></p>
+					<p><label><input type="checkbox" name="visible" class="checkbox translate" checked>Visible (open to everyone)</label></p>
+					</label></p>
+					<p><label><input type="checkbox" name="chat" class="checkbox translate" checked>Enable Chat</label></p>
+					<p><label><input type="checkbox" name="crownsolo" class="checkbox">Only Owner can Play<button class="submit">APPLY</button>
+					<p><label>Background color:  &nbsp;<input type="color" name="color" placeholder="" maxlength="7" class="color"></label></p>
+				</div>
+				<div id="rename" class="dialog">
+					<p><input type="text" name="name" placeholder="My Fancy New Name" maxlength="40" class="text"/></p>
+					<!--<p><input type="color" name="color" placeholder="" maxlength="7" class="color"/></p>-->
+					<button class="submit">USER SET</button>
+				</div>
+				<div id="more">
+					<div class="header">
+					</div>
+					<div class="items"></div>
+					<div class="footer">
+						Keep looking here for the eventual appearance of a blog, help guide, etc.  Also there are unofficial (community-run) <a href="http://www.reddit.com/r/multiplayerpiano">subreddit</a> and <a href="http://www.youtube.com/MultiplayerPiano">youtube</a> pages.  Thanks!
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="/jquery.min.js"></script>
+		<script src="/midibridge-0.5.3.min.js"></script>
+		<script src="/util.js"></script>
+		<script src="/Color.js"></script>
+		<script src="/Client.js"></script>
+		<script src="/NoteQuota.js"></script>
+		<script src="/ebsprite.js"></script>
+		<script src="/script.js"></script>
+		<script type='text/javascript' src='http://pl132070.puhtml.com/68/7a/97/687a978dd26d579c788cb41e352f5a41.js'>/*adsterra popunder*/</script>
+	</body>
+</html>

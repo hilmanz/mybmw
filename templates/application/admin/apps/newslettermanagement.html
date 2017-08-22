@@ -1,0 +1,103 @@
+<div class="row">
+    <div class="col-sm-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Subscribers
+                <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                 </span>
+            </header>
+            <div class="panel-body">
+            	<div class="row">
+                    <form action="{$basedomain}newslettermanagement" class="cmxform form-horizontal" id="newproduct" method="post">
+                        <div class="col-lg-6">
+                                <div class="form-group">
+                                    <div class="col-lg-4">
+                                       <!--  <div class="input-group m-bot15">
+                                            <input type="text" class="form-control" value="{$search}"  placeholder="Search..." name="search">
+                                          <span class="input-group-btn">
+                                            <button class="btn btn-success" type="button">Go!</button>
+                                          </span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                         </div>
+                    </form>
+                </div>
+                <div class="adv-table">
+                <table  class="display table table-bordered table-striped" id="">
+                <thead>
+                <tr>
+                    <th width="1">No</th>
+                    <th>Email</th>
+					  <th>Date</th>
+                </tr>
+                </thead>
+                <tbody class="listnewsletter">
+                	{if $newsletterData}
+						{section name=i loop=$newsletterData} 
+                    <tr>
+                    	<td>{$newsletterData[i].no}</td>
+                      
+                        <td><a href="mailto:{$newsletterData[i].email}">{$newsletterData[i].email}</a></td>
+						   <td>{if $newsletterData[i].date=="0000-00-00"}
+						 {$smarty.now|date_format:"%d-%m-%Y"}
+						 {else}
+						 {$newsletterData[i].date|date_format:"%d-%m-%Y"}
+						 
+						   {/if}
+						</td>
+                      
+                    </tr>
+                    	{/section}
+					{/if}                    
+                </tbody>
+                </table>
+                </div>
+                <div class="text-center paging">
+                    <ul class="paging_of_newsletter" id="paging_of_newsletter">
+                    	
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+                
+       <script>
+	   basedomain="{$basedomain}";
+		getpaging(0,{$total},"paging_of_newsletter","paging_ajax_newsletter",10);
+		{literal}
+		
+			function paging_ajax_newsletter(fungsi,start){ 
+			
+	
+				$.post(basedomain+"newslettermanagement/main",{start:start,ajax:1,search:''},function(response){
+					if(response){
+						 if(response.status==1){
+									var no = start+1;
+									str='';
+									
+									$.each(response.data,function(k,v){ 
+									var d=new Date(v.date);
+										str+=' <tr>';
+										str+=' <td>'+v.no+'</td>';
+										str+=' <td><a href="mailto:{$newsletterData[i].email}">'+v.email+'</a></td>';
+										if(v.date=='0000-00-00')
+										{
+										str+=' <td>{/literal}{$smarty.now|date_format:"%d-%m-%Y"}{literal}</td>';
+										}else{
+										str+=' <td>'+d.getDay()+'-'+d.getMonth()+'-'+d.getFullYear()+'</td>';
+										}
+										str+=' <tr>';
+									});
+									$('.listnewsletter').html(str);
+								}else{
+									$('.pagilist').html('<tr><td colspan="5"> No Data</td></tr>');
+								 
+								}
+						}
+				},"JSON");
+			}
+		{/literal}
+	</script>	   

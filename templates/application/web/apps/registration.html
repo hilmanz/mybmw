@@ -1,0 +1,55 @@
+<div id="registrationPage" class="pages">
+    <section class="section">
+        <div class="container">
+            <form class="theForm" id="registration" method="POST" action="{$basedomain}registration">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Your Mission to Drive.</h2>
+                        <h3>HELLO AGENT.<br />
+Fill your data below to initiate your mission. <br />
+Stand a chance to win a special viewing ticket <br />
+of Mission: Impossible - Rogue Nation!</h3>
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+                <div class="row">
+                    <div class="col-md-6">
+                    	<div class="rows">
+                            <input type="text" name="firstname" maxlength="50" class="firstname" placeholder="Agent's First Name*" />
+                            <span class="firstname_erorr red"></span>
+                        </div>
+                    	<div class="rows">
+                            <input type="text" name="lastname"maxlength="50" class="lastname" placeholder="Agent's Last Name*" />
+                            <span class="lastname_erorr red"></span>
+                        </div>
+                    	<div class="rows">
+                            <input type="text" name="phone" maxlength="20" class="phone number" placeholder="Mobile Number*" />
+                            <span class="phone_erorr red"></span>
+                        </div>
+                    	<div class="rows">
+                            <input type="text" name="email" maxlength="100" class="email" placeholder="Email*" style="margin:0;"/>
+                            <span class="email_erorr red"></span>
+                        </div>
+                    	<div class="rows">
+                        	<input type="text" name="vehicle" maxlength="50" class="vehicle" placeholder="Current Vehicle" />
+                        </div>
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+                <div class="row">
+                    <div class="col-md-12">
+                       <button class="button btnblue" name="btn_submit" value="1" type="submit" style="margin:30px 0 0 0;">SUBMIT</button> <span class="pesanwite"></span>
+                    </div><!-- end .col-md-12 -->
+                </div><!-- end .row -->
+            </form>
+        </div><!-- end .container -->
+    </section>
+</div>
+<div id="popup-thanks" class="popup mfp-hide">
+			<div class="popupfullcontent">
+				<p>Thank you for your Registration, we will get in touch with you shortly .<br />Your BMW Indonesia Team</p>
+				
+			</div>
+</div><!-- END .popup -->
+{$navigation}
+<footer id="footer">
+ {$footer}
+</footer>

@@ -1,0 +1,146 @@
+{literal}
+<style>
+		{/literal}
+		{section name=i loop=$dataDestination} 
+		#bromo-{$dataDestination[i].idPages}{literal}{{/literal}
+			background-image: url({$basedomain}public_assets/bmwpic/page/{$dataDestination[i].baground});
+			{literal}
+		}
+		{/literal}
+		{/section}
+		{literal}
+@media (max-width: 1100px) {
+		{/literal}
+		{section name=i loop=$dataDestination} 
+		#bromo-{$dataDestination[i].idPages}{literal}{{/literal}
+			background-image: url({$basedomain}public_assets/bmwpic/page/{$dataDestination[i].ipad_land_page});
+			{literal}
+		}
+		{/literal}
+		{/section}
+		{literal}
+} 
+@media only screen and (max-width: 800px) {
+		{/literal}
+		{section name=i loop=$dataDestination} 
+		#bromo-{$dataDestination[i].idPages}{literal}{{/literal}
+			background-image: url({$basedomain}public_assets/bmwpic/page/{$dataDestination[i].ipad_pot_page});
+			{literal}
+		}
+		{/literal}
+		{/section}
+		{literal}
+}
+@media (max-width: 600px) {
+		{/literal}
+		{section name=i loop=$dataDestination} 
+		#bromo-{$dataDestination[i].idPages}{literal}{{/literal}
+			background-image: url({$basedomain}public_assets/bmwpic/page/{$dataDestination[i].mobile_bg});
+			{literal}
+		}
+		{/literal}
+		{/section}
+		{literal}
+}
+</style>
+{/literal}
+
+
+{$navigation}
+<div id="namibiaDetail">
+    <div id="fullpage">
+		{if $dataDestination}
+					{section name=i loop=$dataDestination}  
+						<section id="bromo-{$dataDestination[i].idPages}" class="section">
+							{if $smarty.section.i.first || $smarty.section.i.index  && !$smarty.section.i.last}
+							
+							{assign var=running_total value=$smarty.section.i.index+2}
+							{*}<a class="scrolldown" id="scrolldown" href="#bromo-{$running_total}"><i class="icon-chevron-down">&nbsp;</i></a>{/*}
+							{/if}
+							{if $smarty.section.i.last}
+							{if $dataDestination[0].gallery==1}
+							{*}<a class="scrolldown" id="scrolldown" href="#namibia-5"><i class="icon-chevron-down">&nbsp;</i></a>{/*}
+							{else}
+							<a class="scrolldown" id="scrolldown" href="#bromo-1"><i class="icon-chevron-up">&nbsp;</i></a>
+							{/if}
+							{/if}
+							
+							<!-- <a class="scrolldown" id="scrolldown" href="#bromo-1"><i class="icon-chevron-up">&nbsp;</i></a> -->
+							
+							<div class="contentbanner {if $dataDestination[i].potition == 'center'}{else}fontblack{/if} anim">
+								<div class="container">
+									<div class="row {$dataDestination[i].potition|escape:'html'}">
+										
+										{if $dataDestination[i].potition == 'center'}
+										<div class="col-md-12">
+									    <div class="centercontent">
+										<h2 class="quote"><img src="{$basedomain}assets/images/quote.png" style="width:43px;" /></h2>
+										{$dataDestination[i].content}
+										</div>
+										{else}
+										<div class="col-md-6  {if $dataDestination[0].id==110} fullwidth {/if}">
+										{$dataDestination[i].content}
+										{/if}
+										</div><!-- end .col-md-6 -->
+									</div><!-- end .row -->
+								</div><!-- end .container -->
+							</div><!-- end .contentbanner -->
+
+										 {if $dataDestination[i].idPages==2}
+										 {if $dataDestination[0].id==110}
+											<div class="findmore">
+												<div class="container">
+																				<div class="row">
+																					<div class="col-md-6   fullwidth ">
+												Find out more:<br><b>BMW Call Center</b> <br>(021) 2927 9677<br>Mon–Fri, 09.00-17.00<br><br>*Travel period and program details is subject to change.<br>&nbsp;&nbsp; Reservation will be on first come first serve basis.
+																					</div><!-- end .col-md-6 -->
+																				</div><!-- end .row -->
+																			</div><!-- end .container -->
+											</div>
+										{/if}
+										{/if}
+						</section>
+					 {/section}
+		 {/if}
+		 {if $dataDestination[0].gallery==1}
+			 <section id="namibia-5" class="section">
+		<div class="contentbanner">
+            <div id="bannerpage">
+                <div class="bannerpage">
+                	<div class="flexslider">
+                      <ul class="bxslider2">
+                       {section name=j loop=$dataGallery}  
+									  <li>
+											<img src="{$basedomain}public_assets/bmwpic/gallery/{$dataGallery[j].file_name}" {*} class="img-{$dataGallery[j].idPages}" {/*} />
+									  </li>
+								 {/section}
+                      </ul>
+                    </div>
+                </div>
+                <div class="shape"></div>
+            </div>
+            {*}
+			 {if $dataDestination[0].id==112}
+            <div class="container">
+                    <div class="centercontent fontblack">
+                            <h3>Enjoy a unique adventure in the exotic of Namibia with BMW Driving Experience. </h3><br />
+                            <a href="http://www.bmw-drivingexperience.com/bmw/COM/bmw_driving_experience_com/en/training-courses/training-course-finder/bmw-namibia-multiday-tour.html#/all/Type:Offroad" target="_blank" class="button btnblue jointhetour">Join The Tour</a>
+                            <a href="{$basedomain}assets/download/Namibia-Driving-Xperience-e-Brochure.pdf" class="button btnnobg" target="_blank"><span class="icon-download">&nbsp;</span> Download E-Brochure</a>
+                    </div><!-- end .centercontent -->
+            </div><!-- end .container -->
+			{/if}
+			{/*}
+        </div><!-- end .contentbanner -->
+    </section>
+		 {/if}
+    </div>
+</div>
+ {if $dataDestination[0].share=='yes'}
+<div class="social">    
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}public_assets/bmwpic/page/{$dataDestination[0].baground}','','{$dataDestination[0].fbshare}')"><i class="icon-facebook">&nbsp;</i></a>
+	<a class="twittershare" href="http://twitter.com/share?text={$dataDestination[0].twittershare}"  target="_blank"><i class="icon-twitter">&nbsp;</i></a>
+</div>
+{/if}
+<footer id="footer">
+ {$footer}
+</footer>

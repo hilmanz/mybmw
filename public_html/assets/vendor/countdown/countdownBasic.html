@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>jQuery Countdown</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+<p>Counting down to 26 January <span id="year">2014</span>.</p>
+<div id="defaultCountdown"></div>
+		<script src="../jquery.js"></script>
+		<script src="../jquery-ui.js"></script>
+<script src="jquery.plugin.js"></script>
+<script src="jquery.countdown.js"></script>
+<script>
+$(function () {
+	var austDay = new Date();
+	austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
+	$('#defaultCountdown').countdown({until: austDay});
+	$('#year').text(austDay.getFullYear());
+});
+</script>
+</body>
+</html>

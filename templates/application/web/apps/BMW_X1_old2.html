@@ -1,0 +1,84 @@
+
+{$navigation}
+<div id="promotionDetail">
+    <section id="THEBMWX1" class="section">
+        <div class="thecontent" style="padding:70px 0 70px;">
+            <div class="container">
+                <div class="row">
+                    <div class="promocontent">
+                        <h2>YOURS WITH 599 MIO ON THE ROAD.*</h2>
+						<h3>THE BMW X1.</h3>
+                     				<p>Whether heading off the horizon or into the world’s greatest cities: the perfect vehicle for any journey is the new BMW X. Its bold appearance, impressive functionality and modern technologies make it the perfect companion for any way of life.</p>
+                     				<p style="margin:0;"><strong>Standard features & technologies: </strong></p>
+                                    <ul style="margin:10px 0 20px 0; list-style:circle; padding:0 0 0 20px;">
+                                    	<li>BMW Navigation System Profesional</li>
+                                        <li>8,8" display screen and iDrive Controller</li>
+                                        <li>18" light-alloy wheels, Y-spoke</li>
+                                        <li>Nevada leather upholstery</li>
+                                    </ul>
+                         <p>Write to <a href="mailto:contact.us@bmw.co.id">contact.us@bmw.co.id</a> to find out more details on
+    your financing scheme, or</p>
+                            <a href="http://www.bmw.co.id/en/integration/testdrive.html" target="_blank" class="button btnblue test_drive">Request a test drive</a><br />
+                        <div class="bottomtexts"><br />
+                        <p>
+					 <span class="small"><i>*Terms and conditions apply.</i></span></p>
+                     	<p>More information: <br />
+                     		BMW Call Center<br />
+                        	021 2927 9677<br />
+                            Mon-Fri, 09.00-17.00</p>
+
+<p id="BMWFSLogos"><img src="{$basedomain}assets/content/BMWFSLogo.png" width="300" /></p>
+                        </div>
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+            </div><!-- end .container -->
+        </div><!-- end .thecontent -->
+    </section>
+</div>
+<div class="social">
+<!--     <a class="facebookshare"  target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[title]=THE BMW X1&p[url]={$basedomain}programs/BMWX1&p[summary]=THE BMW X1. NOW STARTING FROM IDR 599 MILLION ON THE ROAD. More info on {$basedomain}programs/BMWX1&p[images][0]={$basedomain}assets/images/THEBMWX1.jpg" data-url="{$basedomain}programs/BMWX1"> <i class="icon-facebook">&nbsp;</i></a> -->
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}programs/BMWX1','{$basedomain}assets/images/THEBMWX1.jpg','','THE BMW X1. NOW STARTING FROM IDR 599 MILLION ON THE ROAD. More info on {$basedomain}programs/BMWX1')"><i class="icon-facebook">&nbsp;</i></a>
+	<a class="twittershare" href="http://twitter.com/share?text=THE BMW X1. NOW STARTING FROM IDR 599 MILLION ON THE ROAD. More info on &url={$basedomain}programs/BMWX1"  target="_blank"><i class="icon-twitter">&nbsp;</i></a>
+</div>
+<footer id="footer">
+{$footer}
+</footer>
+
+<script>
+{literal}
+$(document).ready(function(){
+			$(".twittershare").on("click", function(){
+			var  typenya = 2;
+
+				$.ajax({
+                        'type': 'POST',
+                        'url': basedomain+'tracking',
+                        'data': {typenya:typenya},
+						'dataType':'json'
+
+					})
+				});
+			});
+{/literal}
+</script>
+<script>
+{literal}
+
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: 'feed',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+
+
+			});
+
+		}
+{/literal}
+</script>

@@ -1,0 +1,197 @@
+<div id="popup-upload-audio" class="popup mfp-hide">
+    <div class="popupcontent">
+    	<h3 class="title">Upload <span class="red">Audio</span></h3>
+        <div class="rows center">
+		<form action="{$basedomain}personal/addportofolioaudio" method="post" enctype="multipart/form-data" id="formuploadaudio">
+                      
+		  <div class="boxs boxaudio">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table">
+                  <tr>
+                    <td> 
+						<a href="javascript:void(0)" class="button2 upaudio"> UPLOAD THUMBNAIL </a>
+						<input type="file"  name="foto[]"  value="" class="fotoaudio" style="display:none">
+						<span class="row tmptaudio" > </span>
+					</td>
+                  </tr>
+				  <tr>
+                    <td><input type="hidden" value="3"  name="type[]"  />
+					<input type="text"  class="urlaudio" name="url[]" value="" placeholder="Paste Url Here" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="titleaudio" name="title[]" value="" placeholder="Insert Title Here" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text"  class="descaudio" name="desc[]" value="" placeholder="Insert Video Description" /></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label>Tag in Category</label>
+                      <div class="selectbox">
+					  <select name="category[]">
+                     {section name=p loop=$listcategory}
+							<option value="{$listcategory[p].id}">{$listcategory[p].category_name}</option>
+						{/section}
+						</select>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+            </div><!-- END .boxs -->
+            <div class="boxs boxaudio">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table">
+				<tr>
+                    <td> 
+						<a href="javascript:void(0)" class="button2 upaudio"> UPLOAD THUMBNAIL </a>
+						<input type="file"  name="foto[]"  value="" class="fotoaudio" style="display:none">
+						<span class="row tmptaudio" > </span>
+					</td>
+                  </tr>
+				   <tr>
+                    <td><input type="hidden" value="3"  name="type[]"  />
+					<input type="text"  class="urlaudio" name="url[]" value="" placeholder="Paste Url Here" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="titleaudio" name="title[]" value="" placeholder="Insert Title Here" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text"  class="descaudio" name="desc[]" value="" placeholder="Insert Video Description" /></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label>Tag in Category</label>
+                      <div class="selectbox">
+                      <select name="category[]">
+						{section name=q loop=$listcategory}
+							<option value="{$listcategory[q].id}">{$listcategory[q].category_name}</option>
+						{/section}
+						</select>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+            </div><!-- END .boxs -->
+            <div class="boxs boxaudio">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table">
+				<tr>
+                    <td> 
+						<a href="javascript:void(0)" class="button2 upaudio"> UPLOAD THUMBNAIL </a>
+						<input type="file"  name="foto[]"  value="" class="fotoaudio" style="display:none">
+						<span class="row tmptaudio" > </span>
+					</td>
+                  </tr>
+				  <tr>
+                    <td><input type="hidden" value="3"  name="type[]"  />
+					<input type="text"  class="urlaudio" name="url[]" value="" placeholder="Paste Url Here" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="titleaudio" name="title[]" value="" placeholder="Insert Title Here" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text"  class="descaudio" name="desc[]" value="" placeholder="Insert Video Description" /></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label>Tag in Category</label>
+                      <div class="selectbox">
+                     <select name="category[]">
+						{section name=y loop=$listcategory}
+							<option value="{$listcategory[y].id}">{$listcategory[y].category_name}</option>
+						{/section}
+						</select>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+            </div><!-- END .boxs -->
+            <div class="smallbtn audiolists">
+                <input type="submit" value="SAVE" class="button1 saveprotoaudio" />
+				<input type="hidden" name="uploadphoto" value="1">
+                <input type="button" value="+ Add More Audio" class="button2 addmoreaudio" />
+            </div>
+			</form>
+        </div><!-- END .rows -->
+    </div>
+		<div id="progressbaraudio" style="display:none" ><div class="progress-label"></div></div>
+</div>
+<script>
+{literal}
+$(function() {
+	getFilesaudio();
+	duplicataudio();
+	clickuploadaudio();
+});
+function getFilesaudio()
+{
+	$('.upaudio').click(function()
+	{
+		thiss= $(this).next('.fotoaudio');
+		console.log(thiss);
+		thiss.change(function(e)
+		 {
+		   
+			   e.preventDefault();
+				
+			    $(".upload_no").html('');
+			   if(this.files[0].type=='image/jpeg')
+				{
+					 var reader = new FileReader();
+					 reader.onload = function (ex) {
+						ex.preventDefault();
+						console.log($(thiss).next('.tmptaudio'));
+						$(thiss).next('.tmptaudio').html('<br> <img width="100" class="filimg" hegiht="100" src="'+ex.target.result+'"> ');
+					  }
+				  reader.readAsDataURL(this.files[0]);
+				
+				  end;
+				}
+		});
+		
+		$($(this).next('.fotoaudio')).trigger('click');
+	});
+
+}
+function duplicataudio()
+{
+	$('.addmoreaudio').click(function(e)
+	{
+		e.preventDefault();
+		console.log($(".boxaudio:last"));
+		$(".boxaudio:last").clone().insertBefore('.audiolists');
+		
+		$('.urlaudio:last').val('');
+		$('.tmptaudio:last').html('');
+		$('.titleaudio:last').val('');
+		$('.descaudio:last').val('');
+		getFilesaudio();
+		end;
+	});
+}
+function clickuploadaudio()
+{
+	$('.saveprotoaudio').click(function()
+	{
+		$('#progressbaraudio').show();
+		var progressbar = $( "#progressbaraudio" ),
+			progressLabel = $( ".progress-label" );
+			progressbar.progressbar({
+				value: false,
+				change: function() {
+					progressLabel.text( progressbar.progressbar( "value" ) + "%" );
+				},
+				complete: function() {
+					progressLabel.text( "Complete!" );
+				}
+			});
+			function progress() {
+				var val = progressbar.progressbar( "value" ) || 0;
+				progressbar.progressbar( "value", val + 2 );
+				if ( val < 99 ) {
+					setTimeout( progress, 80 );
+				}
+			}
+			setTimeout( progress, 2000 );
+		
+	});
+}
+{/literal}
+</script>

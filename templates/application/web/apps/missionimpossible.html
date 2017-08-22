@@ -1,0 +1,133 @@
+
+{$navigation}
+<div id="containervideo" class="click-to-play-video inactive-state">
+    <div id="player" class="home-player autoheight"></div>
+</div><!-- end #containervideo -->
+<a class="closevideo" href="#">x</a>
+{literal}
+<script type="text/javascript">
+	function hideFlash() {
+		document.getElementById("flashbanner").style.display = "none";
+	}
+</script>
+{/literal}
+<div id="jpgBanner">
+ <div class="overlay"></div>
+ 	<a href="{$basedomain}registration" id="bannerimg"><img src="{$basedomain}assets/content/Banner_600x600.gif" id="bannerimgs" /></a>
+</div>
+<div id="flashbanner">
+ <div class="overlay"></div>
+ <div class="flashbox">
+<object id="flashObject" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1360" height="1080">
+  <param name="movie" value="{$basedomain}assets/content/banner3.swf" />
+  <param name="quality" value="high" />
+  <param name="wmode" value="opaque" />
+  	<param name="allowScriptAccess" value="sameDomain" />
+  <param name="swfversion" value="6.0.65.0" />
+  <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+  <param name="expressinstall" value="{$basedomain}assets/js/expressInstall.swf" />
+  <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+  <!--[if !IE]>-->
+  <object type="application/x-shockwave-flash" data="{$basedomain}assets/content/banner3.swf" width="1360" height="1080">
+    <!--<![endif]-->
+    <param name="quality" value="high" />
+    <param name="wmode" value="opaque" />
+    <param name="swfversion" value="6.0.65.0" />
+    <param name="expressinstall" value="{$basedomain}assets/js/expressInstall.swf" />
+    <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+    <div>
+      <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+    </div>
+    <!--[if !IE]>-->
+  </object>
+  <!--<![endif]-->
+</object>
+	</div>
+</div>
+<div id="homepagemi">
+    <div id="promotionDetail">
+        <section id="imp-1" class="section autoheight">
+          <div class="thecontent">
+            <div class="container">
+              <div class="row">
+                <div class="promocontent">
+                            <h2>Your Mission to Drive.</h2>
+                                <h3>DISCOVER THE NEW BMW 3 SERIES AT <br />
+    GAIKINDO INDONESIA INTERNATIONAL <br />
+    AUTO SHOW 2015.</h3>
+                            <p>Meet the new BMW 3 Series as seen in Mission: Impossible - Rogue Nation 
+    by visiting the BMW Pavilion at the Gaikindo Indonesia International Auto Show 2015,  
+    Indonesia Convention Exhibition BSD City, 20 - 30 August 2015 and stand a chance  
+    to win an exclusive BMW M Driving Experience to Sepang Circuit, Malaysia.</p>
+                                
+<a href="#" class="play" id="playbutton2"><i class="icon icon-play">&nbsp;</i> <small>WATCH TRAILER</small></a>
+                        </div><!-- end .col-md-6 -->
+                    </div><!-- end .row -->
+                </div><!-- end .container -->
+            </div><!-- end .thecontent -->
+        </section>
+    </div>
+</div>
+<div class="social">
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}missionimpossible','{$basedomain}assets/content/Mission-Impossible.jpg','','Seen the new breed of BMW lately? Take a peek on {$basedomain} to find out more.')"><i class="icon-facebook">&nbsp;</i></a>
+	<!-- <a class="trigertwitter" href="#" ><i class="icon-twitter">&nbsp;</i></a> -->
+	<a  id="twittershare" class="twittershare" href="http://twitter.com/share?text=Seen the new breed of BMW lately? Take a peek on {$basedomain} to find out more."  target="_blank"><i class="icon-twitter">&nbsp;</i></a>
+</div>
+<footer id="footer">
+ {$footer}
+</footer>
+
+<script>
+{literal}
+setTimeout(function() {
+    $('#jpgBanner').fadeOut('fast');
+}, 7000); // <-- time in milliseconds
+$(document).ready(function(){
+			$(".twittershare").on("click", function(){
+			var  typenya = 2;
+			
+				$.ajax({
+                        'type': 'POST',
+                        'url': basedomain+'tracking',
+                        'data': {typenya:typenya},
+						'dataType':'json',
+                        'success': function(result){
+					
+						if(result.status==true)
+												{
+												//$('.twittershare').trigger('click');
+												//return true;
+												}
+						
+										}
+					})
+					//return false;
+				});
+			});
+{/literal}
+</script>
+
+<script>
+{literal}
+
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: 'feed',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+				
+				
+			});
+				 
+		}
+		
+swfobject.registerObject("flashObject");
+{/literal}
+</script>

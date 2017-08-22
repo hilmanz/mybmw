@@ -1,0 +1,196 @@
+<div id="popup-upload-video" class="popup mfp-hide">
+    <div class="popupcontent">
+    	<h3 class="title">Upload <span class="red">Videos</span></h3>
+        <div class="rows center">
+		<form action="{$basedomain}personal/addportofoliovideo" method="post" enctype="multipart/form-data" id="formuploadvideo">
+                      
+		  <div class="boxs boxvideos">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table">
+                  <tr>
+                    <td> 
+						<a href="javascript:void(0)" class="button2 upvideo"> UPLOAD THUMBNAIL </a>
+						<input type="file"  name="foto[]"  value="" class="fotovideo" style="display:none">
+						<span class="row tmptvideo" > </span>
+					</td>
+                  </tr>
+				  <tr>
+                    <td><input type="hidden" value="2"  name="type[]"  />
+					<input type="text" class="urlvideo"  name="url[]" value="" placeholder="Paste Url From Youtube or Vimeo Here" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="titlevideo" name="title[]" value="" placeholder="Insert Title Here" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="descvideo" name="desc[]" value="" placeholder="Insert Video Description" /></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label>Tag in Category</label>
+                      <div class="selectbox">
+						<select name="category[]">
+						{section name=j loop=$listcategory}
+							<option value="{$listcategory[j].id}">{$listcategory[j].category_name}</option>
+						{/section}
+						</select>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+            </div><!-- END .boxs -->
+            <div class="boxs boxvideos">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table">
+				<tr>
+                    <td> 
+						<a href="javascript:void(0)" class="button2 upvideo"> UPLOAD THUMBNAIL </a>
+						<input type="file"  name="foto[]"  value="" class="fotovideo" style="display:none">
+						<span class="row tmptvideo" > </span>
+					</td>
+                  </tr>
+				 <tr>
+                    <td><input type="hidden" value="2"  name="type[]"  />
+					<input type="text" class="urlvideo"  name="url[]" value="" placeholder="Paste Url From Youtube or Vimeo Here" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="titlevideo" name="title[]" value="" placeholder="Insert Title Here" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="descvideo" name="desc[]" value="" placeholder="Insert Video Description" /></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label>Tag in Category</label>
+                      <div class="selectbox">
+                      <select name="category[]">
+						{section name=i loop=$listcategory}
+							<option value="{$listcategory[i].id}">{$listcategory[i].category_name}</option>
+						{/section}
+						</select>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+            </div><!-- END .boxs -->
+            <div class="boxs boxvideos">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table">
+				<tr>
+                    <td> 
+						<a href="javascript:void(0)" class="button2 upvideo"> UPLOAD THUMBNAIL </a>
+						<input type="file"  name="foto[]"  value="" class="fotovideo" style="display:none">
+						<span class="row tmptvideo" > </span>
+					</td>
+                  </tr>
+				 <tr>
+                    <td><input type="hidden" value="2"  name="type[]"  />
+					<input type="text" class="urlvideo"  name="url[]" value="" placeholder="Paste Url From Youtube or Vimeo Here" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="titlevideo" name="title[]" value="" placeholder="Insert Title Here" /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="descvideo" name="desc[]" value="" placeholder="Insert Video Description" /></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label>Tag in Category</label>
+                      <div class="selectbox">
+                     <select name="category[]">
+						{section name=ve loop=$listcategory}
+							<option value="{$listcategory[ve].id}">{$listcategory[ve].category_name}</option>
+						{/section}
+						</select>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+            </div><!-- END .boxs -->
+            <div class="smallbtn videolists">
+                <input type="submit" value="SAVE" class="button1 saveprotovideo" />
+				<input type="hidden" name="uploadphoto" value="1">
+                <input type="button" value="+ Add More Videos" class="button2 addmorevideo" />
+            </div>
+			</form>
+        </div><!-- END .rows -->
+    </div>
+	<div id="progressbarvideo" style="display:none" ><div class="progress-label"></div></div>
+</div>
+<script>
+{literal}
+$(function() {
+	getFilesvideo();
+	duplicatvideo();
+	clickuploadvideo();
+});
+function getFilesvideo()
+{
+	$('.upvideo').click(function()
+	{
+		thiss= $(this).next('.fotovideo');
+		console.log(thiss);
+		thiss.change(function(e)
+		 {
+		   
+			   e.preventDefault();
+				
+			    $(".upload_no").html('');
+			   if(this.files[0].type=='image/jpeg')
+				{
+					 var reader = new FileReader();
+					 reader.onload = function (ex) {
+						ex.preventDefault();
+						console.log($(thiss).next('.tmptvideo'));
+						$(thiss).next('.tmptvideo').html('<br> <img width="100" class="filimg" hegiht="100" src="'+ex.target.result+'"> ');
+					  }
+				  reader.readAsDataURL(this.files[0]);
+				
+				  end;
+				}
+		});
+		$($(this).next('.fotovideo')).trigger('click');
+	});
+
+}
+function duplicatvideo()
+{
+	$('.addmorevideo').click(function(e)
+	{
+		e.preventDefault();
+		console.log($(".boxvideo:last"));
+		$(".boxvideos:last").clone().insertBefore('.videolists');
+		
+		$('.urlvideo:last').val('');
+		$('.tmptvideo:last').html('');
+		$('.titlevideo:last').val('');
+		$('.descvideo:last').val('');
+		getFilesvideo();
+		end;
+	});
+}
+ function clickuploadvideo()
+{
+	$('.saveprotovideo').click(function()
+	{
+		$('#progressbarvideo').show();
+		var progressbar = $( "#progressbarvideo" ),
+			progressLabel = $( ".progress-label" );
+			progressbar.progressbar({
+				value: false,
+				change: function() {
+					progressLabel.text( progressbar.progressbar( "value" ) + "%" );
+				},
+				complete: function() {
+					progressLabel.text( "Complete!" );
+				}
+			});
+			function progress() {
+				var val = progressbar.progressbar( "value" ) || 0;
+				progressbar.progressbar( "value", val + 2 );
+				if ( val < 99 ) {
+					setTimeout( progress, 80 );
+				}
+			}
+			setTimeout( progress, 2000 );
+		
+	});
+}
+{/literal}
+</script>

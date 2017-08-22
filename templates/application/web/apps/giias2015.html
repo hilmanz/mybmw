@@ -1,0 +1,75 @@
+
+{$navigation}
+<div id="giias2015">
+    <div id="giias2015Detail">
+    	{*}
+        <section id="giias-1" class="section autoheight">
+          <div class="thecontent">
+            <div class="container">
+              <div class="row">
+                <div class="promocontent">
+                            <h2>Witness a living legend.</h2>
+                                <h3>GAIKINDO INDONESIA INTERNATIONAL AUTO SHOW 2015. <br />
+                                INDONESIA CONVENTION EXHIBITION BSD CITY, 20-30 August 2015.</h3>
+                            <p>Visit the BMW pavilion and discover a showcase of the BMW Model Range. From a celebration of 40 years of the legendary 3 Series, to the elegance of the new 6 Series and the versatility of the X Models. Also stand a chance to win an exclusive BMW M Track Experience Sepang 2015</p>
+                                
+<a href="#" class="play" id="playbutton2"><i class="icon icon-play">&nbsp;</i> <small>WATCH TRAILER</small></a>
+                        </div><!-- end .col-md-6 -->
+                    </div><!-- end .row -->
+                </div><!-- end .container -->
+            </div><!-- end .thecontent -->
+        </section>
+        {/*}
+        <section id="giias-1" class="section autoheight">
+          	<div class="thecontent">
+            	
+            </div><!-- end .thecontent -->
+        </section>
+        <section id="giias" class="section">
+          <div class="giiasthecontent">
+            <div class="container">
+                  <div class="row">
+                    	<div class="promocontents">
+                            <h2>GAIKINDO INTERNATIONAL AUTOSHOW 2015.</h2>
+                                <h3>INDONESIA CONVENTION EXHIBITION BSD CITY, 20-30 AUGUST.</h3>
+                            <p>Visit the BMW Pavilion and discover a showcase of the BMW Model Range. From a celebration of 40 years of the legendary 3 Series, to the elegance of the new 6 Series and the versatility of the X Models. Also stand a chance to win an exclusive BMW M Track Experience Sepang 2015.</p>
+                                
+                        </div><!-- end .promocontent -->
+                    </div><!-- end .row -->
+                </div><!-- end .container -->
+            </div><!-- end .thecontent -->
+        </section>
+    </div>
+</div>
+<div class="social">
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}missionimpossible','{$basedomain}assets/content/Mission-Impossible.jpg','','Seen the new breed of BMW lately? Take a peek on {$basedomain} to find out more.')"><i class="icon-facebook">&nbsp;</i></a>
+	<!-- <a class="trigertwitter" href="#" ><i class="icon-twitter">&nbsp;</i></a> -->
+	<a  id="twittershare" class="twittershare" href="http://twitter.com/share?text=Seen the new breed of BMW lately? Take a peek on {$basedomain} to find out more."  target="_blank"><i class="icon-twitter">&nbsp;</i></a>
+</div>
+<footer id="footer">
+ {$footer}
+</footer>
+
+
+<script>
+{literal}
+
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: 'feed',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+				
+				
+			});
+				 
+		}
+		
+{/literal}
+</script>

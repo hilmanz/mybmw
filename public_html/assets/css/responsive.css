@@ -1,0 +1,1880 @@
+#mobnav-btn, .mobnav-subarrow {
+	display:none
+}
+@media (max-width:2000px) {
+	#bannerpage {
+		position:relative;
+	}
+}
+@media (max-width:1470px) {
+
+	body {
+		font-size:14px
+	}
+	#route img {
+		max-width:250px
+	}
+	#section2 .contentbanner, #section3 .contentbanner {
+		margin:0 0 -70px
+	}
+	.container h2, .contentbanner h2, .thecontent h2 {
+		font-size:30px
+	}
+	.personality h2{
+		font-size: 24px;
+	}
+	.contentbanner p, .thecontent p {
+		max-width:inherit
+	}
+	#f45-1 p {
+		max-width:400px
+	}
+	#myCountdown {
+		border:1px solid #fff;
+		border-radius:5px;
+		display:inline-block;
+		width:85px;
+		height:100px;
+		padding:10px 0 0;
+		margin:10px 0
+	}
+	.countdown-section {
+		text-align:center;
+		text-transform:uppercase
+	}
+	.countdown-amount {
+		font-family:bmw_groupbold;
+		font-size:60px;
+		line-height:60px;
+		position:absolute;
+		height:60px;
+		top:10px;
+		width:100%;
+		text-align:center
+	}
+	.countdown-period {
+		border-top:solid 1px #fff;
+		text-align:center;
+		font-size:10px;
+		text-indent:-5000px;
+		position:absolute;
+		bottom:20px;
+		width:100%
+	}
+	.countdown-period:after {
+		content:"Days To Launch";
+		display:block;
+		position:absolute;
+		top:0;
+		padding:10px 0;
+		text-indent:0
+	}
+	#productGenius .centercontent p {
+		margin:0 0 10px
+	}
+	#promotionDetail .thecontent {
+		padding:100px 0 70px
+	}
+	#promotionDetail .drivingpleasure h1{
+		font-size:27px;
+	}
+	#promotionDetail .drivingpleasure h2{
+		font-size:20px;
+	}
+	#promotionDetail .drivingpleasure p{
+		font-size:12px;
+	}
+	#createyourcard {
+		margin-top:140px;
+		max-width: 332px !important;
+	}
+
+	.thecontent h3 {
+		margin:10px 0
+	}
+	.headcontent{
+		padding:110px 0 0 0;
+	}
+	.headcontent h1{
+		font-size:30px;
+	}
+	#section-product .bx-wrapper .bx-controls-direction a{
+		top:100px;
+		margin-top:auto;
+	}
+	.bx-wrapper .bx-prev{
+		left:30px;
+	}
+	#section-product .bx-wrapper img{
+		opacity:0;
+	}
+	#section-product .bx-wrapper .product-img img{
+		opacity:1;
+	}
+	.bx-wrapper .bx-next{
+		right:30px;
+	}
+	.productslide .bx-wrapper .bx-viewport{
+		min-height:660px;
+		overflow:inherit;
+	}
+	.productcontent{
+		background-position:0 0;
+		background-size:auto 380px;
+	}
+	.product-img {
+		margin:150px -110px 0 0;
+	}
+}
+
+@media (max-width:1290px) {
+	.boxbanner{
+		top:-30px;
+	}
+	.product-img img{
+		max-width:720px;
+	}
+	.productslide .bx-wrapper .bx-viewport{
+		min-height:600px;
+		overflow:inherit;
+	}
+	.infoContent{
+		padding:50px 0 0 0;
+	}
+	.container .infoContent h2{
+		font-size:24px;
+	}
+	.infoContent h3{
+		font-size:14px;
+		margin:0 0 10px 0;
+	}
+	.headingslide .f45container{
+		bottom:70px;
+	}
+}
+@media (max-width:1100px) {
+	.headcontent{
+		max-width:900px;
+	}
+	#banner {
+		background-attachment:scroll
+	}
+	.bottomtexts {
+		margin:20px 0 0
+	}
+	.scrolldown {
+		display:none
+	}
+	.thecontent {
+		padding:100px 0 70px
+	}
+	#productGenius .centercontent {
+		padding:50px 0
+	}
+	.navmenu a.drive_btn, a.drive_btn {
+		padding:0 35px 0 10px
+	}
+	body {
+		font-size:14px
+	}
+	#namibia-1 {
+		background-image:url(../images/namibia-1ipadl.jpg)
+	}
+	#namibia-1 .contentbanner {
+		margin:0 0 100px
+	}
+	.navmenu a {
+		margin:0 12px 0 0
+	}
+	.shape {
+		bottom:-45px
+	}
+	#bannerpage {
+		padding:0
+	}
+	.autoheight .col-md-6 br {
+		display:none
+	}
+	.routecontent {
+		max-width:400px
+	}
+	#section2 .contentbanner, #section3 .contentbanner {
+		margin:0
+	}
+	#banner.autoheight .col-md-6 {
+		max-width:400px;
+		position:inherit
+	}
+	#banner #myCountdown {
+		top:auto
+	}
+	#banner p {
+		max-width:250px
+	}
+	.centercontent {
+		padding:30px 0
+	}
+	#bannerpage {
+		background:#2a5697
+	}
+	.img-1 {
+		top:0
+	}
+	.img-3 {
+		top:150px
+	}
+	.img-4 {
+		top:-100px
+	}
+	.img-5, .img-6, .img-7, .img-8, .img-9 {
+		top:0
+	}
+	#navbar {
+		display:none
+	}
+	#section-product .bx-wrapper img{
+		opacity:0;
+	}
+	#section-product .bx-wrapper .product-img img{
+		opacity:1;
+	}
+	.productcontent{
+		background-position:0 0;
+		background-size:auto 360px;
+		min-height:360px;
+	}
+	#jpgBanner{
+		display:block;
+	}
+	#flashbanner{
+		display:none;
+	}
+	.the-activetourerpersonality{
+		background-size: 100%;
+		background-color: #070912;
+	}
+	.the-grantourerpersonality{
+		background-image:url(../images/grantourerpersonality_l.jpg);
+		background-size: 100%;
+		background-position: bottom center;
+	}
+	.personality{
+		width: 80%;
+	}
+}
+@media only screen and (max-width:960px) {
+	#subscribe h3 {
+		font-size:20px
+	}
+	#route img {
+		margin:0 0 0 -100px
+	}
+	#productGenius h2 {
+		margin:20px 0 0;
+		font-size:20px
+	}
+	#player {
+		padding:0
+	}
+
+	.the-activetourerpersonality{
+		background-image:url(../images/activetourerpersonality_p.jpg);
+	}
+	.the-grantourerpersonality{
+		background-image:url(../images/grantourerpersonality_p.jpg);
+	}
+	#grantourer-personality .personality{
+		top: 130px;
+		width: 90%;
+		right: auto;
+		left: 30px;
+	}
+	#activetourer-personality .personality{
+		width: 90%;
+		right: auto;
+		left: 30px;
+		bottom: auto;
+		top: 550px;
+	}
+	.boxbanner {
+
+	}
+	.x-1-slide-wrapper {
+		margin-top: inherit;
+	}
+}
+@media only screen and (max-width:800px) {
+	.navmenu .active a, .navmenu a:hover {
+		transform:scale(1);
+		-webkit-transform:scale(1);
+		-moz-transform:scale(1)
+	}
+	.scrolldown {
+		display:none
+	}
+	body {
+		font-size:16px
+	}
+	#banner {
+		background-image:url(../images/f1_ipad_p.jpg);
+		background-attachment:scroll
+	}
+	img.logo-gabung-putih {
+		display: none;
+	}
+	img.logo-gabung-hitam {
+		display: block;
+	}
+	.x-1-slide-wrapper {
+		margin-top: inherit;
+	}
+	#f45-1 {
+		background-image:url(../images/f1_ipad_p.jpg)
+	}
+	#gran {
+		background-image:url(../images/gran_p.jpg);
+	}
+	#section2 {
+		background-image:url(../images/2_ipad_p.jpg);
+		background-attachment:scroll
+	}
+	#section3 {
+		background-image:url(../images/3_p.jpg)
+	}
+	#namibia-1 {
+		background-image:url(../images/namibia-1ipad.jpg)
+	}
+	#namibia-2 {
+		background-image:url(../images/namibia-2s.jpg)
+	}
+	#namibia-3 {
+		background-image:url(../images/namibia-3ipad.jpg)
+	}
+	#namibia-4 {
+		background-image:url(../images/namibia-4ipad.jpg)
+	}
+	#bromo-1 {
+		background-image:url(../images/bromo-1ipad.jpg)
+	}
+	#bromo-2 {
+		background-image:url(../images/bromo-2ipad.jpg)
+	}
+	#bromo-3 {
+		background-image:url(../images/bromo-3ipad.jpg)
+	}
+	#promo {
+		background-image:url(../images/promotion_ipad.jpg)
+	}
+	#promo2 {
+		background-image:url(../images/promotion2_ipad.jpg)
+	}
+	.container h2, .contentbanner h2, .thecontent h2 {
+		font-size:30px
+	}
+	.logo-nav {
+		float:none
+	}
+	a.mdrive_btn {
+		margin:22px 30px
+	}
+	#mobnav-btn {
+		display:block;
+		float:left;
+		height:70px;
+		line-height:75px;
+		font-family:bmw_groupbold;
+		cursor:pointer;
+		color:#fff;
+		font-size:26px;
+		width:25px;
+		overflow:hidden
+	}
+	.mobnav-subarrow {
+		display:block;
+		height:40px;
+		width:100%;
+		position:absolute;
+		top:8px;
+		right:10px;
+		-webkit-transition:all .1s ease-in-out;
+		-moz-transition:all .1s ease-in-out;
+		-ms-transition:all .1s ease-in-out;
+		-o-transition:all .1s ease-in-out;
+		transition:all .1s ease-in-out;
+		cursor:pointer
+	}
+	.mobnav-subarrow i:before {
+		display:block;
+		text-align:right;
+		line-height:20px
+	}
+	.sf-menu {
+		width:100%!important;
+		display:none
+	}
+	.sf-menu.xactive {
+		display:block!important;
+		border-top:solid 1px #eee;
+		padding:0 0 40px
+	}
+	.sf-menu li {
+		float:none!important;
+		display:block!important;
+		width:100%!important;
+		padding:0
+	}
+	.sf-menu li a {
+		float:none!important;
+		border-bottom:solid 1px #eee
+	}
+	.sf-menu ul {
+		position:static!important;
+		display:none!important
+	}
+	.xpopdrop ul {
+		display:block!important;
+		box-shadow:none;
+		padding:0 0 0 20px
+	}
+	.sf-menu ul li:before {
+		display:block;
+		font-family:eufont;
+		speak:none;
+		font-style:normal;
+		font-weight:400;
+		font-variant:normal;
+		text-transform:none;
+		-webkit-font-smoothing:antialiased;
+		-moz-osx-font-smoothing:grayscale;
+		content:"\ea6d";
+		color:#262626;
+		line-height:40px;
+		position:absolute;
+		left:-10px
+	}
+	.sf-menu ul ul{
+		border: none;
+	}
+	.sf-menu ul li a.sf-with-ul:before{
+		display: none;
+	}
+	.xpopdrop .icon-chevron-right:before {
+		content:"\e671"
+	}
+	a.drive_btn {
+		display:none
+	}
+	a.mdrive_btn {
+		display:inline-block
+	}
+	#subscribe h3 {
+		font-size:18px
+	}
+	#subscribe button {
+		padding:0 30px
+	}
+	.flex-control-nav {
+		bottom:20px
+	}
+	#section2 .contentbanner, #section3 .contentbanner {
+		margin:0 0 100px
+	}
+	.namibia1content {
+		position:relative;
+		margin:0 0 300px;
+		max-width:400px
+	}
+	#namibia-5 h3 {
+		font-size:40px;
+		max-width:400px;
+		margin:30px 0 0
+	}
+	.routecontainer {
+		width:90%
+	}
+	#route {
+		display:none
+	}
+	.promocontent p {
+		max-width:400px
+	}
+	#footerBottom .col-md-6 {
+		width:50%;
+		float:left
+	}
+	#footerBottom li {
+		margin:0 0 0 10px
+	}
+	#namibia-1 .contentbanner {
+		margin:0
+	}
+	#route img {
+		margin:0;
+		position:inherit!important;
+		display:none
+	}
+	#routebtn {
+		display:inline-block
+	}
+	.headingslide{
+		padding:0 0 0 0;
+	}
+	.bx-wrapper .bx-viewport{
+		overflow:inherit !Important;
+	}
+	.headcontent{
+		padding:0 40px;
+		color:#000000;
+	}
+	.headingslide .container{
+		top: auto;
+		position: inherit;
+		margin: 30px 0 00;
+	}
+	.boxbanner{
+		top:auto;
+		width:100%;
+		/*margin:130px 0 30px 0;*/
+	}
+	.boxslider{
+		padding:0 0 200px 0;
+	}
+	.infoslide .boxslider{
+		padding:0 0 30px 0;
+	}
+	.product-img{
+		margin:0;
+	}
+	.product-text{
+		position:inherit;
+	}
+	.infoContent{
+		float:none;
+		padding:50px 20px;
+	}
+	#section-info{
+		background:#393939;
+		max-height:inherit;
+	}
+	.content-imp{
+		padding:40px;
+	}
+	#imp-1{
+		background:url(../content/miimposible_ipad.jpg) no-repeat center 55px #050716;
+		padding:350px 0 0 0;
+	}
+	.productcontent{
+		min-height:400px;
+		background-size:auto 550px;
+	}
+	#section-product{
+		min-height: 750px;
+		background-color: #fff;
+	}
+	.headingslide .f45container{
+		bottom:auto;
+	}
+	.luxbox{
+		max-height: none;
+	}
+	.bannerbox .buttonbox {
+	    position: relative;
+	    bottom: auto;
+	    left: auto;
+	    width: 100%;
+	}
+	.bannerbox .button{
+		width: 100%;
+		margin: 10px 0;
+	}
+}
+
+
+
+@media (max-width:600px) {
+	#createyourcard {
+		margin-top:-80px;
+		max-width: 50% !important;
+	}
+	.find320 {
+	    font-size: 10px !important;
+	    margin-top: 5px;
+	    margin-left:30px;
+	    /*float:right !important;*/
+	}
+	.x-1-slide-wrapper {
+		margin-top: inherit;
+	}
+	#video7series iframe{
+		height: 255px;
+
+	}
+	#slidecarousel .videoPlayer.shows iframe{
+		width: 320px; height: 320px;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		left: -15px;
+	}
+	#drivingluxury{
+		overflow: hidden;
+	}
+	.bgart{
+		background-size: 200px;
+	}
+	.plyvid{
+		width: 50%;
+		left: 30px;
+		bottom: 0;
+	}
+	.heading .promocontent {
+	    padding: 60px 20px 0 20px;
+	}
+	#drivingluxurycontent .thecontents .promocontent{
+		padding: 0 20px 30px 20px;
+	}
+	.luxuryimg{
+		padding: 0 20px;
+	}
+	.waranty{
+		position: inherit;
+		bottom: auto;
+		right: auto;
+	}
+	#BMW5Series .promocontent .heading {
+		margin-top:200px;
+	}
+
+	#registrationBanner {
+		background-image:url(../images/registration_s.jpg);
+		background-size:100%;
+		height:200px;
+		background-color:#fff
+	}
+	#result {
+		font-size:20px
+	}
+	#productGenius {
+		padding:0
+	}
+
+	.autoheight {
+		height:auto!important;
+		min-height:700px
+	}
+	body {
+		font-size:14px;
+		padding:0
+	}
+	#banner {
+		background-image:url(../images/f1_s2.jpg);
+		background-attachment:scroll;
+		background-size:100%;
+		background-color:#1c2d37
+	}
+	#f45-1 {
+		background-image:url(../images/f1_s2.jpg);
+		background-size:100%;
+		background-color:#1c2d37;
+		background-position:top
+	}
+	#gran {
+		background:url(../images/gran_s.jpg) bottom center no-repeat #12192b;
+	}
+	#section2 {
+		background-image:url(../images/2_s.jpg)
+	}
+	#section3 {
+		background-image:url(../images/3_s.jpg)
+	}
+	#namibia-1 {
+		background-image:url(../images/namibia-1s.jpg)
+	}
+	#namibia-2 {
+		background-image:url(../images/namibia-2s.jpg)
+	}
+	#namibia-3 {
+		background-image:url(../images/namibia-3s.jpg)
+	}
+	#namibia-4 {
+		background-image:url(../images/namibia-4s.jpg)
+	}
+	#bromo-2 {
+		background-image:url(../images/bromo-2s.jpg)
+	}
+	#promo {
+		background-image:url(../images/promotion_s.jpg);
+		padding:0 0 250px;
+		background-size:100%;
+		background-position:bottom;
+		background-color:#000
+	}
+	#promo2 {
+		background-image:url(../images/promotion2_s.jpg);
+		padding:0 0 250px;
+		background-size:100%;
+		background-position:bottom;
+		background-color:#313d49
+	}
+	#BMW3Series {
+		background-image:url(../images/BMW3Series2_s.jpg);
+		padding:0 0 250px;
+		background-size:100%;
+		background-position:bottom;
+		background-color:#000
+	}
+	#THEBMWX1 {
+		background-image:url(../images/THEBMWX1_s.jpg);
+		padding:0 0 250px;
+		background-size:100%;
+		background-position:bottom;
+		background-color:#313d49
+	}
+	#BMW5Series {
+		background-image:url(../images/5series.jpg);
+		background-size:100%;
+		background-position:left top;
+		background-color:#000000;
+		background-attachment: scroll;
+	}
+
+	.drivingpleasure {
+	    position: relative;
+	    margin: 0;
+	}
+
+	#mobnav-btn {
+		line-height:65px;
+		height:55px
+	}
+	.container {
+		width:100%
+	}
+	#fullpage .contentbanner .container {
+		padding:0 40px
+	}
+	#fullpage .contentbanner .centercontent {
+		width:100%
+	}
+	#navigation {
+		min-height:55px
+	}
+	a.mdrive_btn {
+		margin:13px 10px
+	}
+	img.logo-gabung-putih {
+		display: none;
+	}
+	img.logo-gabung-hitam {
+		display: block;
+	}
+	.logo-nav a {
+		height:60px;
+		width:60px;
+		background-size:100%;
+		top:0;
+		margin:0
+	}
+	.iconBmwID {
+		right:65px
+	}
+	.thecontent {
+		padding:70px 0 0
+	}
+	.autoheight .col-md-6 {
+		width:100% !important;
+		max-width: none !important;
+	}
+	.container h2, .contentbanner h2, .thecontent h2 {
+		font-size:24px
+	}
+	h3 {
+		font-size:16px
+	}
+	p {
+		font-size:12px;
+		margin:0 0 10px
+	}
+	#subscribe h3 {
+		margin:0 0 10px;
+		line-height:20px
+	}
+	#subscribe .relative {
+		width:100%;
+		margin:0 0 15px
+	}
+	#subscribe input {
+		width:250px;
+		text-align:center
+	}
+	#subscribe label.error {
+		width:100%;
+		display:none!important
+	}
+	.scrolldown {
+		bottom:0;
+		font-size:30px;
+		margin:0 0 0 -15px;
+		width:30px
+	}
+	.play {
+		width:45px;
+		height:45px;
+		margin:10px 0
+	}
+	#productGenius br {
+		display:none
+	}
+	.button {
+		padding:0 20px;
+		line-height:36px;
+		height:30px;
+		font-size:12px
+	}
+	#bromoDetail .btnnobg {
+		padding:0;
+		margin:10px 0 0
+	}
+	.routecontainer {
+		margin:150px 0 0!important;
+		position:inherit!important;
+		top:auto!important
+	}
+	#bromo-3 .col-md-6 {
+		margin:20px 0 0
+	}
+	input[type=checkbox].css-checkbox+label.css-label, input[type=checkbox].css-checkbox+label.css-label.clr {
+		font-size:14px
+	}
+	#bannerpage {
+		background:#2a5697;
+		padding:0;
+		margin:0
+	}
+	#namibia-5 #bannerpage {
+		padding:0
+	}
+	.img-1, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8, .img-9 {
+		top:0
+	}
+	#fullpage .contentbanner {
+		padding:85px 0 0
+	}
+	#fullpage {
+		padding:0
+	}
+	.contentbanner {
+		position:inherit;
+		padding:100px 0 0;
+		margin:0
+	}
+	#section2 .contentbanner, #section3 .contentbanner {
+		margin:0;
+		padding:300px 0 0
+	}
+	#namibia-5 .contentbanner {
+		padding:0
+	}
+	#namibia-5 h3 {
+		font-size:30px
+	}
+	.namibia1content {
+		margin:0 0 100px
+	}
+	#footer, #footer.fixed {
+		/*position:inherit;*/
+	}
+	#footerBottom {
+		height:auto
+	}
+	#footerBottom a, #footerBottom p.copy {
+		display:block;
+		line-height:30px;
+		height:30px;
+		color:#999;
+		font-size:10px;
+		overflow:hidden;
+		text-align:center
+	}
+	#footerBottom span:before {
+		line-height:30px
+	}
+	#footerBottom ul {
+		float:none
+	}
+	#footerBottom ul li {
+		display:inline-block;
+		float:none;
+		vertical-align:top
+	}
+	#footerBottom .col-md-6 {
+		float:none;
+		width:100%;
+		text-align:center
+	}
+	#f45Detail .thecontent {
+		padding:300px 20px 30px
+	}
+	#f45Detail #gran .thecontent{
+		padding: 40px 20px;
+	}
+	#f45Detail p {
+		max-width:none
+	}
+	#productGenius h2 {
+		font-size:20px;
+		margin:20px 0
+	}
+	#productGenius .centercontent {
+		padding:20px
+	}
+	#namibia-5 {
+		min-height:500px
+	}
+	#namibia-5 .centercontent h3 {
+		font-size:200%
+	}
+	.social {
+		top:85px
+	}
+	.social a {
+		width:30px;
+		height:30px
+	}
+	.social a i:before {
+		width:30px;
+		height:30px;
+		line-height:30px;
+		font-size:16px
+	}
+	.social a:hover i.icon-facebook:before {
+		content:"\e691";
+		font-size:10px
+	}
+	.social a:hover i.icon-twitter:before {
+		content:"\e690";
+		font-size:10px
+	}
+	.bromoroute {
+		position:inherit;
+		margin:0
+	}
+	#productGenius #bannerpage {
+		padding:55px 0 0
+	}
+	.keepme {
+		position:relative;
+		left:auto;
+		top:auto;
+		background:0 0
+	}
+	#banner h4, #f45Detail h4 {
+		float:left;
+		margin:30px 0 40px 5px
+	}
+	.the-activetourer #f45Detail h4 {
+		margin:0;
+		float:none
+	}
+	#banner #myCountdown, #f45-1 #myCountdown {
+		float:left
+	}
+	#promotionDetail .thecontent {
+		padding:100px 40px 0
+	}
+
+	#banner .thecontent, .the-home #f45Detail .thecontent {
+		padding:350px 0 0
+	}
+
+	.bottomtexts {
+		margin:20px 0 0
+	}
+	#f45-1 .btnblue {
+		margin:0
+	}
+	.clear {
+		clear:both
+	}
+	.icon-navicon:before {
+		display:block;
+		height:55px;
+		line-height:55px
+	}
+	.sf-menu ul li a {
+		color:#fff
+	}
+	.sf-menu ul li, .sf-menu ul li a:hover {
+		background:0 0
+	}
+	.the-discover .section {
+		min-height:700px;
+		height:auto!important
+	}
+	#namibia-5 a.button.btnnobg {
+		padding:0;
+		margin:20px 0
+	}
+	.boxslider{
+		padding:0 0 100px 0;
+	}
+	.product-text{
+		padding:40px 20px;
+	}
+	.headcontent{
+		padding:0 20px;
+	}
+	.headcontent h1{
+		font-size:20px;
+		color:#000000;
+	}
+	.headcontent p{
+		font-size:14px;
+		color:#000000;
+	}
+	#section-header .boxslider{
+		padding:0 0 180px 0;
+	}
+	.headingslide{
+		padding:0 0 0 0;
+	}
+	#section-product{
+		min-height:645px;
+	}
+	.bx-wrapper .bx-controls-direction a{
+		/*display:none;*/
+		top:80%;
+		margin-top: -76px;
+	}
+	#imp-1{
+		background:url(../content/miimposible_m.jpg) no-repeat center 55px #050716;
+		padding:350px 0 0 0;
+	}
+	#registrationPage{
+		background-size:500px auto;
+	}
+	#registration{
+		padding:150px 0 100px 0;
+	}
+	.thanks-container h1{
+		font-size:26px;
+	}
+	.thanks-container h3{
+		font-size:14px;
+	}
+	.sharebtn .button{
+		display:block;
+		margin:0 0 10px 0;
+	}
+	#milogo{
+		width:170px !important;
+		margin:0 0 10px 0 !important;
+	}
+	.headcontent h3{ margin:0 0 10px 0;}
+	#giias2015Detail{ padding:55px 0 0 0;}
+	#giias-1 {
+		background-image:url(../images/giias_s.jpg);
+		background-attachment:scroll;
+		background-size:100%;
+		height:340px !important;
+		min-height:inherit;
+	}
+	#giias{
+		padding:40px 30px;
+	}
+	.the-grantourerpersonality,.the-activetourerpersonality{
+		background: none;
+	}
+	#grantourer-personality{
+		min-height: 620px;
+		padding: 40px 0;
+	}
+	#grantourer-personality .personality,#activetourer-personality .personality{
+		position: inherit;
+		left: auto;
+		top: auto;
+		bottom: auto;
+		margin: 0 auto;
+		width: 90%;
+	}
+	#grantourer-personality{
+		background: url(../images/grantourerpersonality_s.jpg) no-repeat bottom center #9babb0;
+		background-size: 100%;
+	}
+	#activetourer-personality{
+		background: url(../images/activetourerpersonality_s.jpg) no-repeat top center #070912;
+		background-size: 100%;
+		padding: 250px 0 50px 0;
+	}
+	#drivingexperienceregistration #registration{
+		padding: 50px 0 0 0;
+	}
+	#drivingexperienceregistrationBanner .headcontent{
+		padding: 20px 0 0 0;
+	}
+	/*.boxbanner {
+		margin: 120px 0 30px 0
+	} */
+	.headcontent .x-1-slide h1 {
+		font-size: 17px;
+		margin-top:0;
+		color:#4d4d4f;
+	}
+	.headcontent .x-1-slide h3 {
+		font-size: 12px;
+	}
+	.headcontent .x-1-slide p {
+		color:#4d4d4f;
+	}
+	.headcontent-bottom {
+		margin: 0 auto;
+	}
+	.headcontent-bottom h1 {
+		font-size:20px;
+		color:#000;
+	}
+	.headcontent-bottom h3 {
+		font-size:12px;
+		color:#000;
+	}
+
+	/*** GIIAS 2016 **/
+
+	.btn_request_test_drive {
+		position: fixed;
+		top:140px;
+		right:-37px;
+		z-index:999;
+	}
+	.btn_request_test_drive a.button {
+		width:auto;
+		font-size: 9px;
+		padding: 0 10px;
+		line-height: 32px;
+	}
+
+	/*** NATIONAL PROGRAM ***/
+	#NationalPromo .container {
+		padding-top: 150px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.nationalProgramLogo {
+		width: 100% !important;
+	}
+}
+
+
+@media (max-width:375px) {
+
+	.headcontent h1{
+		font-size:16px;
+		color:#000000;
+	}
+	.buttonact {
+		position:relative;
+		margin:0 0 -40px;
+	}
+	.namibia1content {
+		margin:0
+	}
+	#namibia-5 .centercontent {
+		padding:0
+	}
+	#namibia-3 .contentbanner, #namibia-4 .contentbanner {
+		padding:30px 0 0
+	}
+	.thumbyoutube iframe {
+		width:100%;
+		height:140px
+	}
+	.headcontent h3{
+		font-size:12px;
+	}
+	img.logo-gabung-putih {
+		display: none;
+	}
+	img.logo-gabung-hitam {
+		display: block;
+	}
+	.x-1-slide-wrapper {
+		margin-top: inherit;
+	}
+	.headcontent .x-1-slide h1 {
+		font-size: 17px;
+		margin-top:0;
+		color:#4d4d4f;
+	}
+	.headcontent .x-1-slide h3 {
+		font-size: 12px;
+	}
+	.headcontent .x-1-slide p {
+		color:#4d4d4f;
+	}
+	.buttonblue{
+		display: block;
+		margin: 0 0 20px 0;
+	}
+	.share{
+		margin: 0;
+	}
+	.share img{
+		height: 25px;
+	}
+	.find320 {
+	    font-size: 10px !important;
+	    margin-top: 5px;
+	    float:right !important;
+	}
+
+	#promotionDetail .drivingpleasure h1{
+		font-size:27px;
+	}
+
+	/*.boxbanner {
+		margin: 110px 0 30px 0
+	} */
+
+	#GIAAS2016-slider .headingslide .bx-wrapper .bx-pager {
+		display: none;
+	}
+	#GIAAS2016-slider {
+		padding: 0 0 150px;
+	}
+	#GIAAS2016-slider .headcontent {
+		padding: 20px;
+	}
+	#GIAAS2016-slider .headingslide .container {
+		margin: 0;
+	}
+	#GIAAS2016-slider .headcontent p {
+		font-size:12px;
+		font-family: 'bmw_group_lightregular';
+		margin-top: 5px;
+		margin-bottom: 5px;
+		line-height: 1em;
+	}
+	#GIAAS2016-slider .headcontent p.welcome {
+		font-family: 'bmw_groupbold';
+		margin-top: 2px;
+		width:300px;
+	}
+	#GIAAS2016-slider .headcontent p.welcome_01 {
+		width:300px;
+		font-size: 12px;
+	}
+
+	.video-image-holder {
+		width:80%;
+		margin-left: 40px;
+		top: 370px;
+	}
+	.video-image-holder img {
+		width:100%;
+	}
+	/* SECTION IMAGE BACKGROUND */
+
+	#BMW_i8 {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/01_BMW_i8_mobile.jpg) #efefef;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+		height: 630px;
+	}
+
+	#BMW_M4 {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/02_BMW_M4_GTS_COUPE_mobile.jpg) #f7f7f7;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+		height: 630px;
+	}
+
+	#BMW_440i {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/03_BMW_440i_COUPE_mobile.jpg) #f5f5f5;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+		height: 630px;
+	}
+
+	#BMW_740Li {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/04_BMW-740Li_mobile.jpg) #f1f1f1;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+		height: 630px;
+	}
+
+	a.dl_finance {
+		float: left !important;
+		margin-top: -20px;
+		margin-bottom: 20px;
+	}
+	.btn_request_test_drive {
+		position: fixed;
+		top:140px;
+		right:-50px;
+		z-index:999;
+	}
+	.btn_request_test_drive a.button {
+		width:auto;
+	}
+
+	/*** NATIONAL PROGRAM ***/
+	#NationalPromo .container {
+		padding-top: 150px;
+	}
+	.nationalProgramLogo {
+		width: 100% !important;
+	}
+
+
+
+}
+
+
+@media (max-width:320px) {
+
+	#namibia-4 {
+		background-image:url(../images/namibia-4ss.jpg)
+	}
+	.container h2, .contentbanner h2, .thecontent h2 {
+		font-size:20px
+	}
+	.headcontent h1{
+		font-size:16px;
+		color:#000000;
+	}
+	.headcontent .x-1-slide h1 {
+		font-size: 16px;
+		margin-top:0;
+		color:#4d4d4f;
+	}
+	.headcontent .x-1-slide h3 {
+		font-size: 12px;
+	}
+	.headcontent .x-1-slide p {
+		color:#4d4d4f;
+	}
+	img.logo-gabung-putih {
+		display: none;
+	}
+	img.logo-gabung-hitam {
+		display: block;
+	}
+	.find320 {
+	    font-size: 10px !important;
+	    margin-top: 5px;
+	    float:right !important;
+	}
+	a.drive_btn {
+		display:block;
+		margin:30px 0 0
+	}
+	a.mdrive_btn {
+		display:none
+	}
+	.centercontent {
+		padding:0
+	}
+	.product-img{
+		margin:0 0 0 0;
+	}
+	.productslide .bx-wrapper .bx-viewport{ min-height:525px;}
+	#BMW5Series .promocontent .heading {
+		margin-top:80px;
+	}
+	.x-1-slide-wrapper {
+		margin-top: inherit;
+	}
+
+	/*.boxbanner {
+		margin: 100px 0 30px 0
+	}*/
+
+
+	/*** GIIAS2016 ***/
+	#GIAAS2016-slider .headingslide .bx-wrapper .bx-pager {
+		display: none;
+	}
+	#GIAAS2016-slider {
+		padding: 0 0 150px;
+	}
+	#GIAAS2016-slider .headcontent {
+		padding: 20px;
+	}
+	#GIAAS2016-slider .headcontent p.welcome_01 {
+		width:250px;
+	}
+	#GIAAS2016-slider .headcontent p.welcome {
+		width:250px;
+	}
+	.video-image-holder {
+		width:80%;
+		margin-left: 40px;
+		top: 350px !important;
+	}
+	.video-image-holder img {
+		width:100%;
+	}
+	/* SECTION IMAGE BACKGROUND */
+
+	#BMW_i8 {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/01_BMW_i8_mobile.jpg) #efefef;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+		height: 630px;
+	}
+
+	#BMW_M4 {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/02_BMW_M4_GTS_COUPE_mobile.jpg) #f7f7f7;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+		height: 630px;
+	}
+
+	#BMW_440i {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/03_BMW_440i_COUPE_mobile.jpg) #f5f5f5;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+		height: 630px;
+	}
+
+	#BMW_740Li {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/04_BMW-740Li_mobile.jpg) #f1f1f1;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+		height: 630px;
+	}
+	a.dl_finance {
+		float: left !important;
+		margin-top: -20px;
+		margin-bottom: 20px;
+	}
+	.btn_request_test_drive {
+		position: fixed;
+		top:140px;
+		right:-70px;
+		z-index:999;
+	}
+	.btn_request_test_drive a.button {
+		width:auto;
+		font-size: 9px;
+		padding: 0 10px;
+		line-height: 32px;
+	}
+
+	/*** NATIONAL PROGRAM ***/
+	#NationalPromo .container {
+		padding-top: 100px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.nationalProgramLogo {
+		width: 100% !important;
+	}
+}
+
+
+@media (max-width: 414px) {
+	#GIAAS2016-slider .headingslide .bx-wrapper .bx-pager {
+	display: none;
+	}
+	#GIAAS2016-slider {
+		padding: 0 0 150px;
+	}
+	#GIAAS2016-slider .headcontent {
+		padding: 20px;
+	}
+	#GIAAS2016-slider .headingslide .container {
+		margin: 0;
+	}
+	#GIAAS2016-slider .headcontent p {
+		font-size:12px;
+		font-family: 'bmw_group_lightregular';
+		margin-top: 5px;
+		margin-bottom: 5px;
+		line-height: 1em;
+	}
+	#GIAAS2016-slider .headcontent p.welcome {
+		font-family: 'bmw_groupbold';
+		margin-top: 2px;
+	}
+	.video-image-holder {
+		width:80% !important;
+		margin-left: 40px !important;
+		top: 350px !important;
+	}
+	.video-image-holder img {
+		width:100%;
+		margin-top: 10px !important;
+	}
+	#BMW_i8, #BMW_M4, #BMW_440i, #BMW_740Li {
+		background-size: contain;
+		height: 630px !important;
+	}
+	a.dl_finance {
+		float: left !important;
+		margin-top: -20px;
+		margin-bottom: 20px;
+	}
+	.btn_request_test_drive {
+		position: fixed;
+		top:140px;
+		right:-52px;
+		z-index:999;
+	}
+	.btn_request_test_drive a.button {
+		width:auto;
+	}
+
+	/* SECTION IMAGE BACKGROUND */
+
+	#BMW_i8 {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/01_BMW_i8_mobile.jpg) #efefef;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+		height: 630px;
+	}
+
+	#BMW_M4 {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/02_BMW_M4_GTS_COUPE_mobile.jpg) #f7f7f7;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+		height: 630px;
+	}
+
+	#BMW_440i {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/03_BMW_440i_COUPE_mobile.jpg) #f5f5f5;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+		height: 630px;
+	}
+
+	#BMW_740Li {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/04_BMW-740Li_mobile.jpg) #f1f1f1;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+		height: 630px;
+	}
+
+
+	/*** NATIONAL PROGRAM ***/
+	#NationalPromo .container {
+		padding-top: 150px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.nationalProgramLogo {
+		width: 100% !important;
+	}
+}
+
+
+@media (max-width: 768px) {
+
+	#GIAAS2016-slider .headingslide .bx-wrapper .bx-pager {
+	display: none;
+	}
+	#GIAAS2016-slider {
+		padding: 0 0 150px;
+	}
+	#GIAAS2016-slider .headcontent {
+		padding: 20px;
+	}
+	#GIAAS2016-slider .headingslide .container {
+		margin: 0;
+	}
+	#GIAAS2016-slider .headcontent p {
+		font-size:16px;
+		font-family: 'bmw_group_lightregular';
+		margin-top: 5px;
+		margin-bottom: 5px;
+		line-height: 1em;
+	}
+	#GIAAS2016-slider .headcontent p.welcome {
+		font-family: 'bmw_groupbold';
+		margin-top: 2px;
+	}
+	.video-image-holder {
+		width:90%;
+		margin-left: 55px;
+		top: 500px;
+	}
+	.video-image-holder img {
+		width:100%;
+		margin-top: 50px;
+	}
+	#BMW_i8, #BMW_M4, #BMW_440i, #BMW_740Li {
+		height: 750px;
+		/*background-position: left top !important;
+		background-size: contain;*/
+	}
+	/* SECTION IMAGE BACKGROUND */
+
+	#BMW_i8 {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/01_BMW_i8_mobile.jpg) #efefef;
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: contain;
+		/*height: 630px;*/
+	}
+
+	#BMW_M4 {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/02_BMW_M4_GTS_COUPE_mobile.jpg) #f7f7f7;
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: contain;
+		/*height: 630px;*/
+	}
+
+	#BMW_440i {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/03_BMW_440i_COUPE_mobile.jpg) #f5f5f5;
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: contain;
+		/*height: 630px;*/
+	}
+
+	#BMW_740Li {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		background: url(../content/GIIAS2016/section/04_BMW-740Li_mobile.jpg) #f1f1f1;
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: contain;
+		/*height: 630px;	*/
+	}
+	a.dl_finance {
+		float: left !important;
+		margin-top: -20px;
+		margin-bottom: 20px;
+	}
+	/*.btn_request_test_drive {
+		position: fixed;
+		top:250px;
+		right:-89px;
+		z-index:999;
+	}
+	.btn_request_test_drive a.button {
+		width:auto;
+	}*/
+
+/*	.btn_request_test_drive {
+		position: fixed;
+		top:0;
+		right:230px;
+		z-index:999;
+	}
+	.btn_request_test_drive a.button {
+		width:auto;
+	}*/
+
+
+	/*** NATIONAL PROGRAM ***/
+	#NationalPromo .container {
+		padding-top: 150px;
+		padding-right: 0;
+		padding-left: 0;
+		padding-bottom: 100px;
+	}
+	.nationalProgramLogo {
+		width: 100% !important;
+	}
+}
+
+
+
+@media (min-width : 720px) and (max-width : 1024px)  {
+	#createyourcard {
+		margin-top:-70px;
+		max-width: 50% !important;
+	}
+	#BMW5Series {
+		background-image:url(../images/5series.jpg);
+		background-size:100%;
+		background-position:left top;
+		background-color:#000000;
+		background-attachment: scroll;
+	}
+	#BMW5Series .promocontent .heading {
+		margin-top:400px;
+	}
+
+	a.dl_finance {
+		float: left !important;
+		/*margin-top: -20px;*/
+		margin-bottom: 20px;
+	}
+	.btn_request_test_drive {
+		position: fixed;
+		top:140px;
+		right:-50px;
+		z-index:999;
+	}
+	.btn_request_test_drive a.button {
+		width:auto;
+		font-size: 9px;
+		padding: 5px;
+		line-height: 34px;
+	}
+	/*** NATIONAL PROGRAM ***/
+	#NationalPromo .container {
+		padding-top: 195px;
+		padding-right: 0;
+		padding-left: 0;
+		padding-bottom: 100px;
+	}
+	.nationalProgramLogo {
+		width: 100% !important;
+	}
+}
+
+/********************
+G I I A S   2 0 1 6
+********************/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	#GIAAS2016-slider {
+		padding: 0 0 150px;
+	}
+}
+@media (max-width: 600px) {
+	#GIAAS2016-slider {
+		padding: 0 0 150px;
+	}
+}
+@media (max-width: 320px) {
+	#GIAAS2016-slider {
+		padding: 0 0 150px;
+	}
+}
+@media (max-width: 375px) {
+	#GIAAS2016-slider {
+		padding: 0 0 150px;
+	}
+}
+@media (max-width: 480px) {
+	#GIAAS2016-slider {
+		padding: 0 0 150px;
+	}
+}

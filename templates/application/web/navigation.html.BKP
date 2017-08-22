@@ -1,0 +1,54 @@
+<nav id="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+				<div id="mobnav-btn"><i class="icon-navicon">&nbsp;</i></div>
+                <ul class="navmenu sf-menu" id="main-menu">
+                    <li {if $pages == 'home' } class="active" {/if}><a href="{$basedomain}home">Home</a></li>
+                    {*}<li {if $pages == 'giias2015' } class="active" {/if}><a href="{$basedomain}giias2015">GIIAS 2015</a></li>{/*}
+                    <li {if $pages == 'drivingluxury' } class="active" {/if}><a href="{$basedomain}drivingluxury">Driving Luxury</a></li>
+
+                    <li class="hasdrop {if $pages == 'bromo' || $pages == 'namibia' || $pages == 'destination' || $pages == 'discover' } active {/if}" ><a href="#">Discover</a>
+       					            <div class="mobnav-subarrow"><i class="icon-chevron-right">&nbsp;</i></div>
+                        <ul>
+                            <li {if $pages == 'trivia' } class="active" {/if}><a href="{$basedomain}trivia">Personality Quiz</a></li>
+                            <li><a href="#">BMW Driving Experience</a>
+                                <ul>
+                									{if $menugetDestinations}
+                										{section name=j loop=$menugetDestinations}
+                											 <li><a href="{$basedomain}discover/detail/{$menugetDestinations[j].id}">{$menugetDestinations[j].menu}</a></li>
+                										{/section}
+
+                									{/if}
+                                </ul>
+                    		</li>
+                        </ul>
+                    </li>
+
+                    <li  class="hasdrop {if $pages == 'programs' }active {/if}"><a href="#TGT">Programs</a>
+       					          <div class="mobnav-subarrow"><i class="icon-chevron-right">&nbsp;</i></div>
+                         <ul class="programmenu">
+                           <li><a href="{$basedomain}programs/NationalPromo">National Programs</a></li>
+                            <li><a href="{$basedomain}programs/BMWX1">Dealer Programs</a>
+                                <div class="mobnav-subarrow"><i class="icon-chevron-right">&nbsp;</i></div>
+                                 <ul class="">
+                                   <li><a href="{$basedomain}programs/BMW3SeriesBestindo">320d</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li {if $pages == 'bmwproductgenius' } class="active" {/if}><a href="{$basedomain}bmwproductgenius">BMW Genius & Call Center</a></li>
+                    <li><a href="http://www.bmw.co.id/en/integration/testdrive.html" class="test_drive"  target="_blank">Test Drive</a></li>
+                </ul>
+            </div><!-- end .col-md-6 -->
+			<span style="display:none;" class="temptarget"></span>
+            <div class="col-md-4">
+                <div class="logo-nav">
+                    <a class="iconBmwID">&nbsp;</a>
+                    <a class="iconBmw">&nbsp;</a>
+                </div>
+            </div><!-- end .col-md-6 -->
+        </div><!-- end .row -->
+    </div><!-- end .container -->
+</nav><!-- end #navigation -->

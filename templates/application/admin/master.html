@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+{$meta}
+<body>
+
+<section id="container">
+  	{$header}
+		{$sidebar}
+  <section id="main-content">
+    <section class="wrapper">	
+	{$mainContent}
+ </section>
+</section>
+</section>
+<!-- Placed js at the end of the document so the pages load faster -->
+
+<!--dynamic table-->
+<script type="text/javascript" language="javascript" src="{$basedomain}assets/js/advanced-datatable/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/data-tables/DT_bootstrap.js"></script>
+<script src="{$basedomain}assets/js/iCheck/jquery.icheck.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/ckeditor/ckeditor.js"></script>
+
+{* } <script src="{$basedomain}assets/js/bootstrap-switch.js"></script> {/*}
+
+<script type="text/javascript" src="{$basedomain}assets/js/fuelux/js/spinner.min.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+ <link rel="stylesheet" type="text/css" href="{$basedomain}assets/js/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+<link rel="stylesheet" type="text/css" href="{$basedomain}assets/js/bootstrap-wysihtml5/wysiwyg-color.css" />
+
+<script type="text/javascript" src="{$basedomain}assets/js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/bootstrap-daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/jquery-multi-select/js/jquery.multi-select.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/jquery-multi-select/js/jquery.quicksearch.js"></script>
+
+<script type="text/javascript" src="{$basedomain}assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+
+<script src="{$basedomain}assets/js/jquery-tags-input/jquery.tagsinput.js"></script>
+
+<script src="{$basedomain}assets/js/select2/select2.js"></script>
+<script src="{$basedomain}assets/js/select-init.js"></script>
+
+<script type="text/javascript" src="{$basedomain}assets/js/jquery.validate.min.js"></script>
+<script src="{$basedomain}assets/js/scripts.js"></script>
+<script src="{$basedomain}assets/js/validation-init.js"></script>
+{if $pages != 'dashboard' }
+<script src="{$basedomain}assets/js/toggle-init.js"></script>{/if}
+
+<script src="{$basedomain}assets/js/advanced-form.js"></script>
+<script src="{$basedomain}assets/js/dynamic_table_init.js"></script>
+{if $pages != 'dashboard' } 
+<script src="{$basedomain}assets/js/table-edit-cat.js"></script>
+
+<!-- END JAVASCRIPTS -->
+<script>
+{literal}
+    jQuery(document).ready(function() {
+        EditableTable.init();        
+    });
+    
+{/literal}
+</script>{/if}
+</body>
+</html>

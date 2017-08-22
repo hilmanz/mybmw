@@ -1,0 +1,76 @@
+<div id="promotionDetail">
+    <section id="THEBMWX1" class="section autoheight" data-0="top:0px" data-100="top:-105px;">
+        <div class="thecontent">
+            <div class="container">
+                <div class="row">
+                    <div class="promocontent">
+                        <h2>LIFE HACK #1: CHEAT ON TRANSPORT. <br />GO FURTHER WITH THE BMW X1. </h2>
+						<h3>NOW WITH IDR 340.000 DAILY INSTALLMENT.</h3><br /> 
+                        <p>Whether heading off to the horizon into the world's greatest cities; the perfect vehicle for any journey is the new BMW X1. Its bold appearance, impressive functionally and modern technologies make it the perfect companion for any way of life.</p>
+                     				<p style="margin:0;"><strong>Standard features & technologies: </strong></p>
+                        <ul style="margin:10px 0 20px 0; list-style:circle; padding:0 0 0 20px;">
+                            <li>BMW Navigation System Profesional</li>
+                            <li>18" light alloy wheels, Y-spoke</li>
+                            <li>8.8" display screen and iDrive Controller </li>
+                            <li>Nevada leather upholstery</li>
+                        </ul>
+                         <p>Write to <a href="mailto:contact.us@bmw.co.id">contact.us@bmw.co.id</a> to find out more details on
+    your financing scheme, or</p>
+                            <a href="http://bmw.co.id/id/en/general/testdrive/testdrive.html" target="_blank" class="button btnblue test_drive">Request a test drive</a><br />
+                        <div class="bottomtexts"><br />
+                        <p>
+					 <span class="small"><i>*Terms and conditions apply.</i></span></p>
+                        </div>
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+            </div><!-- end .container -->
+        </div><!-- end .thecontent -->
+    </section>
+</div>
+<div class="social">
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}programs/THEBMWX1','{$basedomain}assets/images/THEBMWX1.jpg','','BMW X1 NOW WITH IDR 340.000 DAILY INSTALLMENT. More info on {$basedomain}programs/THEBMWX1')"><i class="icon-facebook">&nbsp;</i></a>
+	<a class="twittershare" href="http://twitter.com/share?text=BMW X1 NOW WITH IDR 340.000 DAILY INSTALLMENT. More info on &url={$basedomain}programs/THEBMWX1"  target="_blank"><i class="icon-twitter">&nbsp;</i></a>
+</div>
+{$navigation}
+<footer id="footer" data-0="bottom:-105px" data-100="bottom:0px;">
+{$footer} 
+</footer>
+
+<script>
+{literal}
+$(document).ready(function(){
+			$(".twittershare").on("click", function(){
+			var  typenya = 2;
+			
+				$.ajax({
+                        'type': 'POST',
+                        'url': basedomain+'tracking',
+                        'data': {typenya:typenya},
+						'dataType':'json'
+
+					})
+				});
+			});
+{/literal}
+</script>
+<script>
+{literal}
+
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: 'feed',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+				
+				
+			});
+				 
+		}
+{/literal}
+</script>

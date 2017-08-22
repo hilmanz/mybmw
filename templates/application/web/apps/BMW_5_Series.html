@@ -1,0 +1,87 @@
+<div id="promotionDetail">
+    <section id="promo" class="section autoheight" data-0="top:0px" data-100="top:-105px;">
+        <div class="thecontent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 promocontent">
+                        <h2>IMPOSSIBLE TO IGNORE.</h2>
+<h3>THE NEW BMW 528<span style="text-transform:lowercase;">i</span></h3>
+                        <p style="margin:0;">Achieving the best possible results, in every way,<br />
+has always been the objective of the BMW 5 Series.<br /></p>
+                        <p style="margin:0;">The attributes: sportiness, elegance, commanding <br />
+poise - and of course, a pioneering outlook.</p>
+<p>Trade-in your current ride to us and we will gladly<br />
+value it up to IDR 100 mio more than market price.*</p>
+                     				<p style="margin:0;"><strong>Standard Features & Technologies: </strong></p>
+                                    <ul style="margin:10px 0 20px 0; list-style:circle; padding:0 0 0 20px;">
+                                    	<li>4-cylinder, 1997 cc, 245hp/340Nm</li>
+                                    	<li>8-Speed Steptronic Transmission</li>
+                                        <li>Dakota Leather Upholstery</li>
+                                        <li>Ergonomic Comfort Seats</li>
+                                        <li>Electric Glass-roof</li>
+                                        <li>8" light allow wheels, Multi-spoke</li>
+                                        <li>Navigation System Professional</li>
+                                        <li>Driving Experience Control</li>
+                                        <li>9.2" screen Rear-seat Entertainment display</li>
+                                    </ul>
+                         <p>Write to <a href="mailto:contact.us@bmw.co.id">contact.us@bmw.co.id</a> to find out more details <br />on
+    your financing scheme, or</p>
+                            <a href="http://bmw.co.id/id/en/general/testdrive/testdrive.html" target="_blank" class="button btnblue test_drive">Request a test drive</a><br />
+                        <div class="bottomtexts"><br />
+                        <p>
+					 <span class="small"><i>*Monthly installment is valid for 3-year Financing Program with Balloon Payment.<br />
+*Terms and conditions apply.</i></span></p>
+                        </div>
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+            </div><!-- end .container -->
+        </div><!-- end .thecontent -->
+    </section>
+</div>
+<div class="social">
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}promotion','{$basedomain}assets/images/1.jpg','','8,8 mio/month on the BMW 5 Series. More info on {$basedomain}programs/BMW5Series')"><i class="icon-facebook">&nbsp;</i></a>
+	<a class="twittershare" href="http://twitter.com/share?text=8,8 mio/month on the BMW 5 Series. More info on &url={$basedomain}programs/BMW5Series"  target="_blank"><i class="icon-twitter">&nbsp;</i></a>
+</div>
+{$navigation}
+<footer id="footer" data-0="bottom:-105px" data-100="bottom:0px;">
+{$footer} 
+</footer>
+
+<script>
+{literal}
+$(document).ready(function(){
+			$(".twittershare").on("click", function(){
+			var  typenya = 2;
+			
+				$.ajax({
+                        'type': 'POST',
+                        'url': basedomain+'tracking',
+                        'data': {typenya:typenya},
+						'dataType':'json'
+
+					})
+				});
+			});
+{/literal}
+</script>
+<script>
+{literal}
+
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: 'feed',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+				
+				
+			});
+				 
+		}
+{/literal}
+</script>

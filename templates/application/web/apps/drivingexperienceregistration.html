@@ -1,0 +1,101 @@
+{$navigation}
+{literal}
+<style type="text/css">
+.error{
+    color: #c00;
+    display: block;
+    float: none;
+}
+</style>
+{/literal}
+<div id="drivingexperienceregistration">
+    <div id="bannerpage">
+        <div class="bannerpage" id="drivingexperienceregistrationBanner">
+            <img src="{$basedomain}assets/content/registration.jpg" />
+            <div class="headcontent">
+                 <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                            </div><!-- end .col-md-6 -->
+                        </div><!-- end .row -->
+                </div><!-- end .container -->
+            </div>
+        </div>
+    </div>
+    <section class="section">
+        <div class="container">
+            <form class="theForm" id="registration" method="POST" action="https://www.mybmw.co.id/registration/adddataregistration">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>BMW DRIVING EXPERIENCE 2016.</h1>
+                        <h2>KEEP ME INFORMED.</h2>
+                        <p>Kindly fill the form for your interest. <br>Our representative  will contact you shortly.</p><br><br>
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="rows">
+                            <input id="salutation" type="text" name="salutation" maxlength="50" class="salutation" placeholder="Salutation*"  />
+                            <span class="error" id="salutation_error"></span>
+                        </div>
+                        <div class="rows">
+                            <input id="firstname" type="text" name="firstname" maxlength="50" class="firstname" placeholder="First Name*"  />
+                            <span class="error" id="firstname_error"></span>
+                        </div>
+                    	<div class="rows">
+                            <input id="lastname" type="text" name="lastname" maxlength="50" class="lastname" placeholder="Last Name*"  />
+                            <span class="error" id="lastname_error"></span>
+                        </div>
+                        <div class="rows">
+                            <input id="email" type="email" name="email" maxlength="100" class="email" placeholder="Email*" style="margin:0;" />
+                            <span class="error" id="email_error"></span>
+                        </div>
+                    	<div class="rows">
+                            <input id="phone" type="text" name="phone" maxlength="20" class="phone number" placeholder="Phone Number*"  />
+                            <span class="error" id="phone_error"></span>
+                        </div>
+                    	<div class="rows">
+                            <label style="font-family: bmw_group_lightregular;">BMW Driving Experience:</label>
+                            <div class="rows">
+                                <input name="drive1" type="checkbox" checked value="Winter Driving Arjeplog, Sweden (23 – 27 February 2016)"> <span>BMW Winter Driving Arjeplog, Sweden <br> 23 – 27 February 2016</span>
+                            </div>
+                            <div class="rows">
+                                <input name="drive3" type="checkbox" value="Luxury Driving Experience, Munich (5 – 9 July 2016)"> <span>BMW Driving Luxury Experience, Munich, Germany. <br> 5 – 9 July 2016.</span>
+                            </div>
+                            <div class="rows">
+                                <input name="drive4" type="checkbox" value=" Alphine xDrive, Queenstown, New Zealand (17 – 19 August 2016)"> <span>BMW Alphine xDrive, Queenstown, New Zealand <br> 17 – 19 August 2016.</span>
+                            </div>
+                            <div class="rows">
+                                <input name="drive5" type="checkbox" value="Namibia Multiday Tour (5 – 12 December 2016)"> <span>BMW X5 Experience, Namibia Multiday Tour. <br> 5 – 12 December 2016.</span>
+                            </div>
+                        </div>
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="submit" class="button btnblue lanjut" id="submit" value="SUBMIT" />
+                       <span class="pesanwite"></span>
+                       <br><br>
+                    <p>
+                        <strong>More information:</strong><br>
+                        BMW Call Center<br>
+                        (021) 2927 9677 <br>
+                        Mon–Fri, 09.00-17.00<br>
+                        contact.us@bmw.co.id
+                                            </p>
+                       <br><br>
+                    </div><!-- end .col-md-12 -->
+                </div><!-- end .row -->
+            </form>
+        </div><!-- end .container -->
+    </section>
+</div>
+<div id="popup-thanks" class="popup mfp-hide">
+			<div class="popupfullcontent">
+				<p>Thank you for your Registration, we will get in touch with you shortly .<br />Your BMW Indonesia Team</p>
+
+			</div>
+</div><!-- END .popup -->
+<footer id="footer">
+ {$footer}
+</footer>

@@ -1,0 +1,66 @@
+
+{$navigation}
+<div id="grantourer-personality-detail">
+    <section id="grantourer-personality">
+            <div class="container">
+                <div class="row">
+                    <div class="personality">
+                        <h2>SPONTANEITY IS BETTER TOGETHER.</h2>
+                        <p>You are a spontaneous adventurer and you embrace togetherness. Above all else, you love
+to share important moments with those closest to you. Exploring different places, conquering fears
+and discovering new perspectives together ultimately progresses relationships in ways you never imagined.
+To you a group journey is fulfilling, and it is one of the many ways you would consider to make exciting memories.</p>
+
+                        <p>Find out how a 7-seater such as the first-ever BMW Gran Tourer can support your travel impulses.</p>
+						<a class="buttonblue" href="http://www.bmw.co.id/en/all-models/2-series/grantourer/2015/at-a-glance.html" target="_blank">Discover the BMW GRAN Tourer</a> 
+						<span class="callaction">or share your test results with your friends!</span>
+						<span class="share">
+	<a class="facebookshare" href="http://www.facebook.com/sharer.php?u={$basedomain}grantourerpersonality" data-url="{$basedomain}grantourerpersonality" ><i class="icon-facebook-square"></i></a>
+<!-- 	
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}grantourerpersonality','{$basedomain}assets/images/1.jpg','','Discovered my side of spontaneity with {$basedomain} I’d like you to try and let’s see what you are!')"><i class="icon-facebook-square"></i></a> -->
+		<span id="twittershare" class="twittershare"> 
+			<i class="icon-twitter"></i>
+				<a  class="twitter-share-button"
+			  href="https://twitter.com/share"
+			  data-size="large"
+			  data-url=" "
+			  data-count-url=" "
+			  data-via=""
+			  data-related=""
+			  data-hashtags=""
+			  data-text="Discovered my side of spontaneity with {$basedomain} I'd like you to try and let's see what you are!">
+			</a>
+
+		</span>
+						</span>
+
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+            </div><!-- end .container -->
+    </section>
+</div>
+<footer id="footer">
+ {$footer}
+</footer>
+
+<script>
+{literal}
+
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: 'feed',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+				
+				
+			});
+				 
+		}
+{/literal}
+</script>

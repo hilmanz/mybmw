@@ -1,0 +1,60 @@
+
+            <header>
+                User List              
+            </header>
+    
+                    <form action="{$basedomain}usermanagement" class="cmxform form-horizontal" method="get">
+                        
+                                            <input type="text" class="form-control" placeholder="Search..." name="k">
+                                         
+                                            <input class="btn btn-success" type="submit">Go!</input>
+                                          
+                    </form>
+               
+                <table>
+                <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                	{if $data}
+						{section name=i loop=$data} 
+                    <tr>
+                    	<td><a href="adduser">{$data[i].first_name}</a></td>
+                        <td><a href="adduser">{$data[i].last_name}</a></td>
+                        <td><a href="adduser">{$data[i].username}</a></td>
+                        <td><a href="mailto:{$data[i].email}">{$data[i].email}</a></td>
+                        <td><a href="">{$data[i].role}</a></td>
+                        <td>
+                            <button type="button" onclick="window.location.href='{$basedomain}/edituser?id={$data[i].id}'">Edit</button>
+                            <button type="button" onclick="window.location.href='{$basedomain}/deleteuser?id={$data[i].id}'">Delete</button>
+                        </td>
+                    </tr>
+                    	{/section}
+					{/if}                    
+                </tbody>
+                </table>
+                
+                    <ul class="pagination">
+                    	{if $leftarrow}
+                        <li><a href="{$basedomain}usermanagement?p={$leftarrow}{$klink}">&laquo;</a></li>
+                        {/if}
+                        {section name=ctr start=$startpage loop=$endpage step=1}
+                        
+                        {if $smarty.section.ctr.index eq $currentpage}
+                        <li class="active"><a href="{$basedomain}usermanagement?p={$smarty.section.ctr.index}{$klink}">{$smarty.section.ctr.index}</a></li>
+                        {else}
+                        <li><a href="{$basedomain}usermanagement?p={$smarty.section.ctr.index}{$klink}">{$smarty.section.ctr.index}</a></li>
+                        {/if}
+                        {/section}
+                        {if $rightarrow}
+                        <li><a href="{$basedomain}usermanagement?p={$rightarrow}{$klink}">&raquo;</a></li>
+                        {/if}
+                    </ul>
+                

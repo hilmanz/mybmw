@@ -1,0 +1,84 @@
+
+{$navigation}
+<div id="promotionDetail">
+    <section id="BMW3Series" class="section autoheight" data-0="top:0px" data-100="top:-105px;">
+        <div class="thecontent">
+            <div class="container">
+                <div class="row">
+                    <div class="promocontent">
+                        <h2>AN IDEAL SEASON TO GO BACK TO 0.</h2>
+						<h3>ENJOY 0% INTEREST FOR 3 YEARS ON THE BMW 3 SERIES.</h3>
+                     				<p style="margin:0;"><strong>Standard features & technologies: </strong></p>
+                                    <ul style="margin:10px 0 20px 0; list-style:circle; padding:0 0 0 20px;">
+                                    	<li>BMW Navigation System Profesional</li>
+                                        <li>Driving Experience Control (ECO PRO, Comfort, Sport)</li>
+                                        <li>Comfort Access - contactless tailgate opening</li>
+                                        <li>Offered exclusively in Sport, Luxury and Modern Line</li>
+                                    </ul>
+                         <p>Write to <a href="mailto:contact.us@bmw.co.id">contact.us@bmw.co.id</a> to find out more details on
+    your financing scheme, or</p>
+                            <a href="http://bmw.co.id/id/en/general/testdrive/testdrive.html" target="_blank" class="button btnblue test_drive">Request a test drive</a><br />
+                        <div class="bottomtexts"><br />
+                        <p>
+					 <span class="small"><i>*Terms and conditions apply.</i></span></p>
+                     	<p>BMW Call Center:<br />
+                        	021 2927 9677<br />
+                            Mon-Fri, 09.00-17.00</p>
+                     
+                        </div>
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+            </div><!-- end .container -->
+        </div><!-- end .thecontent -->
+    </section>
+</div>
+<div class="social">
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}programs/BMW3Series','{$basedomain}assets/images/BMW3Series.jpg','','THE BMW 3 SERIES IS IDR 380.000 ON DAILY INSTALLMENT. More info on {$basedomain}programs/BMW3Series')"><i class="icon-facebook">&nbsp;</i></a>
+	<a class="twittershare" href="http://twitter.com/share?text=THE BMW 3 SERIES IS IDR 380.000 ON DAILY INSTALLMENT. More info on &url={$basedomain}programs/BMW3Series"  target="_blank"><i class="icon-twitter">&nbsp;</i></a>
+</div>
+<footer id="footer" data-0="bottom:-105px" data-100="bottom:0px;">
+	<div class="container" style="position:relative;">
+<p id="BMWFSLogo"><img src="{$basedomain}assets/content/BMWFSLogo.png" width="300" /></p>
+<p id="BII"><span>Supported by:</span> <img src="{$basedomain}assets/content/BII.jpg" /></p>
+	</div>
+{$footer} 
+</footer>
+
+<script>
+{literal}
+$(document).ready(function(){
+			$(".twittershare").on("click", function(){
+			var  typenya = 2;
+			
+				$.ajax({
+                        'type': 'POST',
+                        'url': basedomain+'tracking',
+                        'data': {typenya:typenya},
+						'dataType':'json'
+
+					})
+				});
+			});
+{/literal}
+</script>
+<script>
+{literal}
+
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: 'feed',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+				
+				
+			});
+				 
+		}
+{/literal}
+</script>

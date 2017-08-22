@@ -1,0 +1,77 @@
+
+{$navigation}
+<div id="registrationPage" class="pages">
+    <section class="section">
+    	<div class="container">
+        <div class="thanks-container">
+          	<div class="thanksmessage">
+            	<h1>THANK YOU  FOR YOUR INTEREST ON <br />BMW DRIVING EXPERIENCE.</h1>
+				<h3>OUR REPRESENTATIVE WILL CONTACT YOU SHORTLY.</h3>
+                <div class="sharebtn">
+                    <a href="{$basedomain}" class="button ok">OK</a>
+                    <a href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}drivingexperience','{$basedomain}assets/content/sweden.jpg','','You has been registered BMW Driving Experience. For more information: {$basedomain}drivingexperience')" class="button"><i class="icon-facebook"></i> Share on Facebook</a>
+		    <a  id="twittershare" class="button" href="http://twitter.com/intent/tweet?text=You has been registered BMW Driving Experience. For more information: {$basedomain}drivingexperience"  target="_blank"><i class="icon-twitter"></i> Share on Twitter</a>
+                </div>
+            </div>
+        </div><!-- end .thanks-container -->
+        </div><!-- end .container -->
+    </section>
+</div>
+<footer id="footer">
+ {$footer}
+</footer>
+
+<script>
+{literal}
+setTimeout(function() {
+    $('#jpgBanner').fadeOut('fast');
+}, 7000); // <-- time in milliseconds
+$(document).ready(function(){
+                        $(".twittershare").on("click", function(){
+                        var  typenya = 2;
+                        
+                                $.ajax({
+                        'type': 'POST',
+                        'url': basedomain+'tracking',
+                        'data': {typenya:typenya},
+                                                'dataType':'json',
+                        'success': function(result){
+                                        
+                                                if(result.status==true)
+                                                                                                {
+                                                                                                //$('.twittershare').trigger('click');
+                                                                                                //return true;
+                                                                                                }
+                                                
+                                                                                }
+                                        })
+                                        //return false;
+                                });
+                        });
+{/literal}
+</script>
+
+<script>
+{literal}
+
+        function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+                        $("#bg-popup").fadeOut();
+                        $(".popup,.popup2").fadeOut();
+                        FB.init();
+                        FB.ui({
+                                method: 'feed',
+                                name: fb_name,
+                                link: fb_link,
+                                picture: fb_img,
+                                caption: fb_user,
+                                description: fb_post
+                                
+                                
+                        });
+                                 
+                }
+                
+swfobject.registerObject("flashObject");
+{/literal}
+</script>
+

@@ -1,0 +1,9 @@
+[02-Mar-2016 22:18:11 America/Chicago] PHP Warning:  require_once(APPLICATION/helper/AccessControlHelper.php): failed to open stream: No such file or directory in /usr/home/mybmw/public_html/main_web/com/wap_apps/App.php on line 3
+[02-Mar-2016 22:18:11 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'APPLICATION/helper/AccessControlHelper.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /usr/home/mybmw/public_html/main_web/com/wap_apps/App.php on line 3
+[03-Mar-2016 21:37:03 America/Chicago] PHP Fatal error:  Class 'API' not found in /usr/home/mybmw/public_html/main_web/com/wap_apps/ServiceAPI.php on line 3
+[04-Mar-2016 04:44:34 America/Chicago] PHP Fatal error:  Class 'API' not found in /usr/home/mybmw/public_html/main_web/com/wap_apps/ServiceAPI.php on line 3
+[04-Mar-2016 08:34:27 America/Chicago] PHP Warning:  require_once(APPLICATION/helper/AccessControlHelper.php): failed to open stream: No such file or directory in /usr/home/mybmw/public_html/main_web/com/wap_apps/App.php on line 3
+[04-Mar-2016 08:34:27 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'APPLICATION/helper/AccessControlHelper.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /usr/home/mybmw/public_html/main_web/com/wap_apps/App.php on line 3
+[04-Mar-2016 10:47:23 America/Chicago] PHP Fatal error:  Class 'API' not found in /usr/home/mybmw/public_html/main_web/com/wap_apps/ServiceAPI.php on line 3
+[04-Mar-2016 16:48:48 America/Chicago] PHP Fatal error:  Class 'API' not found in /usr/home/mybmw/public_html/main_web/com/wap_apps/ServiceAPI.php on line 3
+[04-Mar-2016 22:57:47 America/Chicago] PHP Fatal error:  Class 'API' not found in /usr/home/mybmw/public_html/main_web/com/wap_apps/ServiceAPI.php on line 3

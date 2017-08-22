@@ -1,0 +1,31 @@
+
+            <header class="panel-heading">
+                Edit User
+            </header>
+            
+                   <form action="{$basedomain}edituser" class="cmxform form-horizontal" id="adduser" method="post" enctype="multipart/form-data">
+                       		<input type="hidden" name="id" value="{$id}"/>
+                            <label class="col-sm-2 control-label">First Name</label>
+							<input type="text" placeholder="" name="first_name" class="form-control" value="{$first_name}">
+							
+							<label class="col-sm-2 control-label">Last Name</label>
+							<input type="text" placeholder="" name="last_name" class="form-control" value="{$last_name}">
+                            
+                            <label class="col-sm-2 control-label">Username</label>
+                            <input type="text" placeholder="" name="username" class="form-control" value="{$username}">
+                           
+                            <label class="col-sm-2 control-label">Email</label>
+                            <input type="text" placeholder="" name="email" class="form-control" value="{$email}">
+                            
+                            <label class="col-sm-2 control-label">Password</label>
+                            <input type="password" placeholder="" name="password" class="form-control" value="{$password}">
+
+                            <label class="col-sm-2 control-label col-sm-2"> Role</label>
+                           {html_options name="role" id="e1" class="category" style="width: 300px" options=$roles selected=$role_id}
+                            
+                            <label class="col-sm-2 control-label col-sm-2">&nbsp;</label>
+                            <input class="btn btn-primary" type="submit" name="btn_submit" value="submit"></input>
+                                <button class="btn btn-default" type="button">Cancel</button>
+                           
+                    </form>
+       

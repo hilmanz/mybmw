@@ -1,0 +1,70 @@
+
+{$navigation}
+<div id="activetourer-personality-detail">
+    <section id="activetourer-personality">
+            <div class="container">
+                <div class="row">
+                    <div class="personality">
+                        <h2>SPONTANEITY IS YOUR MIDDLE NAME.</h2>
+                        <p>You are surely spontaneous when it comes to traveling, and feel independent to choose your own path.
+You believe a solo trip can be a powerful and life-changing experience, and the absence of a significant
+other and family members sometimes makes the heart grow fonder. At the end of the day,
+you are determined to discover exceptional experiences, but need your own space to enjoy your freedom.</p>
+
+  <p>If the above is more or less how you would describe yourself, then an ideal travel companion
+would be a dynamic vehicle that has plenty of room for your belongings, bringing forward
+the concept of simple flexibility.</p>
+						<a class="buttonblue" href="http://www.bmw.co.id/en/all-models/2-series/activetourer/2014/at-a-glance.html" target="_blank">Discover the BMW Active Tourer</a>
+						<span class="callaction">or share your test results with your friends!</span>
+						<span class="share">
+
+	<a class="facebookshare" href="http://www.facebook.com/sharer.php?u={$basedomain}activetourerpersonality" data-url="{$basedomain}activetourerpersonality" ><i class="icon-facebook-square"></i></a>
+	<!-- 
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}activetourerpersonality','{$basedomain}assets/images/1.jpg','','Discovered my side of spontaneity with {$basedomain}  I’d like you to try and let’s see what you are!')"><i class="icon-facebook-square"></i></a> -->
+		<span id="twittershare" class="twittershare"> 
+			<i class="icon-twitter"></i>
+				<a  class="twitter-share-button"
+			  href="https://twitter.com/share"
+			  data-size="large"
+			  data-url=" "
+			  data-count-url=" "
+			  data-via=""
+			  data-related=""
+			  data-hashtags=""
+			  data-text="Discovered my side of spontaneity with {$basedomain} I'd like you to try and let's see what you are!">
+			</a>
+
+		</span>
+						</span>
+
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+            </div><!-- end .container -->
+    </section>
+</div>
+<footer id="footer">
+ {$footer}
+</footer>
+
+
+<script>
+{literal}
+
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: 'feed',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+				
+				
+			});
+				 
+		}
+{/literal}
+</script>

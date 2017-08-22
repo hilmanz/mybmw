@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Test for jQuery validate() plugin</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<style>
+	.warning {
+		color: red;
+	}
+	</style>
+	<script src="../lib/jquery.js"></script>
+	<script src="../lib/jquery.mockjax.js"></script>
+	<script src="../lib/jquery.form.js"></script>
+	<script src="../dist/jquery.validate.js"></script>
+	<script>
+        jQuery(function() {
+            $.mockjax({
+                url: "save.action",
+                response: function(settings) {
+                    this.responseText = "THANKS FOR SUBSCRIBE!";
+                },
+                responseStatus: 200,
+                responseTime: 500
+            });
+    
+            // LOADING
+            var loader = jQuery('<div id="loader">LOADING...</div>')
+                .css({
+                    position: "relative",
+                    top: "1em",
+                    left: "25em",
+                    display: "inline"
+                })
+                .appendTo("#subscribeForm")
+                .hide();
+            jQuery().ajaxStart(function() {
+                loader.show();
+            }).ajaxStop(function() {
+                loader.hide();
+            }).ajaxError(function(a, b, e) {
+                throw e;
+            });
+    
+            var v = jQuery("#subscribe").validate({
+                submitHandler: function(form) {
+                    jQuery(form).ajaxSubmit({
+                        target: "#result"
+                    });
+                }
+            });
+    
+        });
+	</script>
+</head>
+<body>
+<div id="main">
+    <form id="subscribe" action="save.action" method="post">
+        <h3>Keep Me InFormed</h3>
+        <div class="relative">
+        <input id="cemail" type="email" name="email" data-rule-required="true" placeholder="Your Email Address" data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address">
+        </div>
+        <input type="hidden" name="subcribe" value="1">
+        <button type="submit" class="button btnblue">Subscribe</button>
+    </form>
+	<div id="result" class="warning"></div>
+</div>
+</body>
+</html>

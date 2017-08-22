@@ -1,0 +1,262 @@
+
+{$navigation}
+<link rel="stylesheet" type="text/css" href="{$basedomain}assets/css/piano/bootstrap.min.css">
+<style type="text/css">
+{literal}
+	body {
+		background: #000;
+	}
+	img {
+		margin: auto;
+	}
+	audio {
+			display:none;
+	}
+	input {
+		border: 2px inset !important;
+		color: #000 !important;
+	}
+	.hide {
+		display: none;
+	}
+
+	#left{
+		float:left;
+		color: #fff;
+	}
+	#melayang {
+		width: 98%;
+		height: 45%;
+		/*background: #FFF;*/
+		margin-top: 25px;
+		position: absolute;
+		overflow: hidden;
+		padding-left: 2%;
+		z-index: 99;
+	}
+	#shares1 {
+		font-size:10px;
+		z-index: 99;
+	}
+	#piano2 {
+		width: 95%;
+		margin-top: 15%;
+		height: 25%;
+		position: absolute;
+		overflow: hidden;
+		z-index: 98;
+	}
+	#piano {
+		width: 95%;
+		height: 25%;
+		margin: auto;
+		position: fixed;
+		overflow: hidden;
+		left: 20px; bottom: 0; right: 0;
+	}
+	#piano .key { float: left;
+		width: 1.8%;
+		height: 90%;
+		border: 1px solid black;
+		background: #fff;
+		margin-left: -0.5%;
+		margin-bottom: 100%;
+		box-shadow: 1px 2px 5px #000;
+		-webkit-box-shadow: 1px 2px 5px #000;
+		-moz-box-shadow: 1px 2px 5px #000;
+		border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		transition: background 4s ease-out;
+		-webkit-transition: background 4s ease-out;
+		-moz-transition: background 4s ease-out;
+		-o-transition: background 4s ease-out;
+		padding: 0px;
+		overflow: hidden;
+	}
+	#piano .key.c, #piano .key.f {
+		margin-left: 0;
+	}
+	#piano .key.sharp { width: 1.2%;
+		height: 50%;
+		background: #000;
+		margin-left: -0.9%;
+		position: relative;
+	}
+
+	#piano .key.loading {
+		background: #888;
+	}
+
+	#piano .key.play {
+		transform: translateY(1%);
+		-webkit-transform: translateY(1%);
+		-webkit-box-shadow: 0px 1px 2px #000;
+	}
+	.mbl1 {
+		margin-left:5%;
+	}
+	.mobilan {
+		width: 8%;
+		float:left;
+	}
+	.tatakan {
+		width:100%;
+		display:block;
+		position: relative;
+	}
+	#mymodal {
+		z-index: 9999;
+	}
+	@media (max-width: 600px){
+		#footer {
+			position: fixed;
+		}
+		h1 {
+			font-size: 18pt;
+		}
+		h4 {
+			font-size: 10pt;
+		}
+		#piano {
+			width: 95%;
+			height: 25%;
+			margin: auto;
+			position: fixed;
+			overflow: hidden;
+			bottom: 0; right: 0;
+		}
+		.mbl1 {
+			margin-left:2%;
+		}
+		.tatakan {
+			width:90%;
+			display:block;
+			margin-left:0px;
+		}
+		#shares1 {
+			font-size:8px;
+		}
+	}
+{/literal}
+</style>
+<div id="melayang">
+	<div id="left">
+		<h1><strong>JOY MAKES US BREAK INTO SONG.</strong></h1>
+		<h4><strong>WISHING YOU AND YOUR FAMILY<br /> A WONDERFUL NEW YEAR.</strong></h4>
+		<div id="shares" class="hide">
+			<button  class="btn btn-default" onclick="document.getElementById('audio').play();">REPLAY</button>
+			<button  class="btn btn-primary" data-toggle="modal" data-target="#myModal">SHARE</button>
+			<br />
+		</div>
+		<div id="shares1" class="hide"><BR>CLICK ON THE PIANO KEYS<br>TO CREATE YOUR SONG OF A JOY.</div>
+	</div>
+</div>
+<div id="piano2">
+	<img src="{$basedomain}assets/images/piano/2016.png" width="20%" style="display:block; position: relative;">
+</div>
+<div id="piano">
+	<img class="mobilan mbl1" src="{$basedomain}assets/images/piano/Mobil1.png">
+	<img class="mobilan mbl2" src="{$basedomain}assets/images/piano/Mobil2.png">
+	<img class="mobilan mbl3" src="{$basedomain}assets/images/piano/Mobil3.png">
+	<img class="mobilan mbl4" src="{$basedomain}assets/images/piano/Mobil4.png">
+	<img class="mobilan mbl5" src="{$basedomain}assets/images/piano/Mobil5.png">
+	<img class="mobilan mbl6" src="{$basedomain}assets/images/piano/Mobil6.png">
+	<img class="mobilan mbl7" src="{$basedomain}assets/images/piano/Mobil7.png">
+	<img class="mobilan mbl8" src="{$basedomain}assets/images/piano/Mobil8.png">
+	<img class="mobilan mbl9" src="{$basedomain}assets/images/piano/Mobil9.png">
+	<img class="mobilan mbl10" src="{$basedomain}assets/images/piano/Mobil10.png">
+	<img class="mobilan mbl11" src="{$basedomain}assets/images/piano/Mobil11.png">
+	<img class="tatakan" src="{$basedomain}assets/images/piano/tatakan.png">
+</div>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">SHARE TO</h4>
+      </div>
+      <form method="POST" action="sendedm">
+      <div class="modal-body">
+        <table width="100%">
+        	<tr>
+        		<td></td>
+        		<td align="center">Name</td>
+        		<td align="center">Email</td>
+        	</tr>
+        	<tr>
+        		<td>Your Details   :</td>
+        		<td align="center"> <input type="text" name="name"> </td>
+        		<td align="center"> <input type="text" name="email"> </td>
+        	</tr>
+        	<tr>
+        		<td>Recipient 1 :</td>
+        		<td align="center"> <input type="text" name="rname[]"> </td>
+        		<td align="center"> <input type="text" name="remail[]"> </td>
+        	</tr>
+        	<tr>
+        		<td>Recipient 2 :</td>
+        		<td align="center"> <input type="text" name="rname[]"> </td>
+        		<td align="center"> <input type="text" name="remail[]"> </td>
+        	</tr>
+        	<tr>
+        		<td>Recipient 3 :</td>
+        		<td align="center"> <input type="text" name="rname[]"> </td>
+        		<td align="center"> <input type="text" name="remail[]"> </td>
+        	</tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="reset" class="btn btn-default" data-dismiss="modal">Reset</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+<audio id="audio" autoplay="autoplay">
+	<source src="{$basedomain}assets/mp3/bmw.mp3" type="audio/mpeg" />
+	Your browser does not support HTML5 audio.
+</audio>
+<script>
+	var domain = "{$basedomain}";
+</script>
+<script src="{$basedomain}assets/js/piano/fireworks.js"></script>
+<script src="{$basedomain}assets/js/piano/script.js"></script>
+<script src="{$basedomain}assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script>
+{literal}
+	tmpmbl = 1;
+	document.getElementById('audio').addEventListener("ended",function() {
+		$("#shares").removeClass("hide");
+		$("#shares1").removeClass("hide");
+		clearInterval(myVar);
+
+		$(".mbl"+tmpmbl).attr("src", domain+"assets/images/piano/Mobil"+tmpmbl+".png");
+	});
+	// document.getElementById('audio').addEventListener("ended",function() {
+	// 	$("#shares").addClass("hide");
+	// });
+	var myVar = setInterval(function(){ myTimer() }, 100);
+
+	function myTimer() {
+	    mbl = Math.floor(Math.random() * 10) + Math.floor(Math.random() * 3);
+		$(".mbl"+tmpmbl).attr("src", domain+"assets/images/piano/Mobil"+tmpmbl+".png");
+		$(".mbl"+mbl).attr("src", domain+"assets/images/piano/Mobil"+mbl+"_"+mbl+".png");
+		tmpmbl = mbl;
+	}
+	var wit = $(window).width();
+	if(wit <= 650){
+		$("#shares").removeClass("hide");
+		$("#shares1").removeClass("hide");
+	}
+
+{/literal}
+</script>
+<footer id="footer">
+ {$footer}
+</footer>

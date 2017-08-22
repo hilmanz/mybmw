@@ -1,0 +1,82 @@
+
+{$navigation}
+<div id="containervideo" class="click-to-play-video inactive-state">
+    <div id="player" class="home-player autoheight"></div>
+</div><!-- end #containervideo -->
+<a class="closevideo" href="#">x</a>
+<div id="f45Detail">
+    <section id="f45-1" class="autoheight sections">
+        <div class="thecontent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Ultimate Flexibility <br />at its best.</h2>
+                            <h3>THE FIRST-EVER BMW ACTIVE TOURER.</h3>
+                        <p>The new breed BMW that combines flexibility with space <br /> and style.  Having numerous clever storage solutions, <br /> space goes without saying - not to mention reserving you  <br /> a lot of room for Driving Pleasure.<br />
+                        <a href="http://www.bmw.co.id/en/integration/testdrive.html" target="_blank" class="button btnblue test_drive">Request a test drive</a></p>
+                            <p>Take a peek at what we mean in a <br />sand artsy way below.</p>
+                            
+						<a href="#" class="play" id="playbutton"><i class="icon icon-play">&nbsp;</i></a>
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+            </div><!-- end .container -->
+        </div><!-- end .contentbanner -->
+    </section>
+</div>
+<div class="social">
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}activetourer','{$basedomain}assets/images/1.jpg','','Seen the new breed of BMW lately? Take a peek on {$basedomain} to find out more.')"><i class="icon-facebook">&nbsp;</i></a>
+	<!-- <a class="trigertwitter" href="#" ><i class="icon-twitter">&nbsp;</i></a> -->
+	<a  id="twittershare" class="twittershare" href="http://twitter.com/share?text=Seen the new breed of BMW lately? Take a peek on {$basedomain} to find out more."  target="_blank"><i class="icon-twitter">&nbsp;</i></a>
+</div>
+<footer id="footer">
+ {$footer}
+</footer>
+
+<script>
+{literal}
+$(document).ready(function(){
+			$(".twittershare").on("click", function(){
+			var  typenya = 2;
+			
+				$.ajax({
+                        'type': 'POST',
+                        'url': basedomain+'tracking',
+                        'data': {typenya:typenya},
+						'dataType':'json',
+                        'success': function(result){
+					
+						if(result.status==true)
+												{
+												//$('.twittershare').trigger('click');
+												//return true;
+												}
+						
+										}
+					})
+					//return false;
+				});
+			});
+{/literal}
+</script>
+
+<script>
+{literal}
+
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: 'feed',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+				
+				
+			});
+				 
+		}
+{/literal}
+</script>

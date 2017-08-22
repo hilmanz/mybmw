@@ -1,0 +1,248 @@
+
+<!--mini statistics start-->
+<div class="row">
+{if $traking}
+{section name=k loop=$traking}
+    <div class="col-md-4">
+        <div class="mini-stat clearfix">
+            <span class="mini-stat-icon color-{$traking[k].type}"><i class="fa fa-{$traking[k].type}"></i></span>
+            <div class="mini-stat-info">
+                <span>  {$traking[k].count}</span>
+               {$traking[k].type}
+            </div>
+        </div>
+    </div>
+   {/section}
+{/if}
+</div>
+
+<!--mini statistics end-->
+<div class="row">
+	<div class="col-md-12">
+    	<form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <div class="input-group input-large" data-date="13/07/2013" data-date-format="mm/dd/yyyy">
+                            <input  id="from" type="text" class="form-control dpd1" name="startdate" value="{$startdate}">
+                            <span class="input-group-addon">To</span>
+                            <input id="to" type="text" class="form-control dpd2" name="enddate"  value="{$enddate}" >
+                            <span class="input-group-btn">
+                            <button class="btn btn-success calendar" type="button">Go!</button>
+                             </span>
+                        </div>
+                    </div>
+                </div>
+       </form>
+	</div>
+    <div class="col-md-12">
+        <section class="panel">
+            <header class="panel-heading">
+             Total Visitor
+                <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                 </span>
+            </header>
+            <div class="panel-body">
+                <div class="top-stats-panel">
+                    <div id="visit" >
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-12">
+        <section class="panel">
+            <header class="panel-heading">
+             Page views
+                <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                 </span>
+            </header>
+            <div class="panel-body">
+                <div class="top-stats-panel">
+                    <div class="daily-visit">
+                        <div id="pageview" class="pageview" >
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-12">
+        <section class="panel">
+            <header class="panel-heading">
+              Avg. Visit Duration
+                <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                 </span>
+            </header>
+            <div class="panel-body">
+                <div class="top-stats-panel">
+                    <div id="avgVisit" class="avgVisit">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!--mini statistics end-->
+ <div class="col-md-12">
+        <section class="panel">
+            <header class="panel-heading">
+             Unique_visitor
+                <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                 </span>
+            </header>
+            <div class="panel-body">
+                <div class="top-stats-panel">
+                    <div id="usernewga" >
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{*} <div class="col-md-12">
+        <section class="panel">
+            <header class="panel-heading">
+             Session
+                <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                 </span>
+            </header>
+            <div class="panel-body">
+                <div class="top-stats-panel">
+                    <div id="sessionga" >
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>{/*}
+<div class="row">
+    <div class="col-md-12">
+        <section class="panel">
+            <header class="panel-heading">
+              Bounce Rate
+                <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                 </span>
+            </header>
+            <div class="panel-body">
+                <div id="bounceRate"></div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+		var gaData = {$dataChart|@json_encode};
+		console.log(gaData);
+		
+	  
+{literal}	
+$(document).ready(function() {
+
+console.log('sdsds');
+	var visitData = new Array();
+	var visitLabel = new Array();		
+	
+	var pageViewData = new Array();
+	var pageViewLabel = new Array();
+	
+	var avgVisitData = new Array();
+	var avgVisitLabel = new Array();
+	
+	var avgTopData = new Array();
+	var avgTopLabel = new Array();
+	
+	var BounceData = new Array();
+	var BounceLabel = new Array();
+	
+	var mobileData = new Array();
+	var mobileLabel = new Array();
+	
+	var desktopData = new Array();
+	var desktopLabel = new Array();
+	
+	var tabletData = new Array();
+	var tabletLabel = new Array();
+	
+	var usergaData = new Array();
+	var usergaLabel = new Array();	
+	
+	var sessionData = new Array();
+	var sessionLabel = new Array();	
+	
+    for (var visitChart in gaData.data.visit){
+			visitData.push(parseInt(gaData.data.visit[visitChart]));
+			visitLabel.push(String(visitChart));
+		}
+		
+	
+	for (var pageViewChart in gaData.data.page_views){
+			pageViewData.push(parseInt(gaData.data.page_views[pageViewChart]));
+			visitLabel.push(String(pageViewChart));
+		}
+	
+
+	for (var avgVisitChart in gaData.data.time_onSite){
+			avgVisitData.push(parseInt(gaData.data.time_onSite[avgVisitChart]));
+
+			avgVisitLabel.push(String(avgVisitChart));
+		}
+		
+	for (var avgtopChart in gaData.data.time_onPage){
+			avgTopData.push(parseInt(gaData.data.time_onPage[avgtopChart]));
+			avgTopLabel.push(String(avgtopChart));
+		}
+	
+	for (var bounceChart in gaData.data.bounce_rate){
+			BounceData.push(parseInt(gaData.data.bounce_rate[bounceChart]));
+			BounceLabel.push(String(bounceChart));
+		}
+	for (var usergaChart in gaData.data.new_users){
+			usergaData.push(parseInt(gaData.data.new_users[usergaChart]));
+			usergaLabel.push(String(usergaChart));
+		}	
+	for (var sessionChart in gaData.data.sessions){
+			sessionData.push(parseInt(gaData.data.sessions[sessionChart]));
+			sessionLabel.push(String(sessionChart));
+		}
+	console.log(avgTopData);
+	gethighChart('line','test  Chart','visit',visitData,visitLabel,1,true);
+	gethighChart('line','test  Chart','pageview',pageViewData,visitLabel,1,true);
+	gethighChart('line','test  Chart','avgVisit',avgVisitData,avgVisitLabel,1,true);
+	//gethighChart('line','test  Chart','avgTimeonpage',avgTopData,avgTopLabel,1,true);
+	gethighChart('line','test  Chart','usernewga',usergaData,usergaLabel,1,true);
+	//gethighChart('line','test  Chart','sessionga',sessionData,sessionLabel,1,true);
+	gethighChart('line','test  Chart','bounceRate',BounceData,BounceLabel,1,true);
+
+	
+	//drillDownChart('column','test Chart','container',dataCoba,cateActivityGroup,1 ,false);
+	});
+	
+	  $('#from').datepicker({
+    autoclose: true,
+    todayHighlight: true
+  
+	});
+	 $('#to').datepicker({
+    autoclose: true,
+    todayHighlight: true
+  
+	}); 
+	$(document).on('click','.calendar', function(){
+		
+		var from = $('#from').val();
+		var to = $('#to').val();
+		
+		window.location.href='?startdate='+from+'&enddate='+to;
+	
+	})
+		
+</script>
+{/literal}

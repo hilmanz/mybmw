@@ -1,0 +1,71 @@
+
+{$navigation}
+
+<div id="promotionDetail">
+    <section id="NationalPromo" class="section">
+        <div class="thecontent">
+            <div class="container">
+                <div class="row">
+                        <div class="promocontent drivingpleasure">
+                            <h1>DRIVING PLEASURE<br>COMES EARLIER.</h1>
+                            <h2>BUY NOW. PAY NEXT YEAR.</h2>
+                         	<p>Program berlaku hanya untuk BMW Active Tourer, BMW Gran Tourer dan BMW 3 Series.
+                                Untuk pertanyaan lebih lanjut hubungi kami di BMW Call Center (021) 2927 9677,
+                                Sen - Jum, 09.00 - 17.00 atau email ke contact.us@bmw.co.id</p>
+                            <p>*Cicilan dibayarkan mulai tahun 2017.<br>
+                            Syarat dan Ketentuan berlaku.</p>
+                            <p class=""><img src="{$basedomain}assets/content/logo_nationalProgram.png" width="300" /></p>
+                            <!-- <p style="float:right;"><img src="{$basedomain}assets/content/logo_nationalProgram.png" width="300" /></p> -->
+                        </div>
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+            </div><!-- end .container -->
+        </div><!-- end .thecontent -->
+    </section>
+</div>
+<div class="social">
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','{$basedomain}programs/BMWX1','{$basedomain}assets/images/THEBMWX1.jpg','','THE BMW X1. NOW STARTING FROM IDR 599 MILLION ON THE ROAD. More info on {$basedomain}programs/BMWX1')"><i class="icon-facebook">&nbsp;</i></a>
+	<a class="twittershare" href="http://twitter.com/share?text=THE BMW X1. NOW STARTING FROM IDR 599 MILLION ON THE ROAD. More info on &url={$basedomain}programs/BMWX1"  target="_blank"><i class="icon-twitter">&nbsp;</i></a>
+</div>
+<footer id="footer">
+{$footer}
+</footer>
+
+<script>
+{literal}
+$(document).ready(function(){
+			$(".twittershare").on("click", function(){
+			var  typenya = 2;
+
+				$.ajax({
+                        'type': 'POST',
+                        'url': basedomain+'tracking',
+                        'data': {typenya:typenya},
+						'dataType':'json'
+
+					})
+				});
+			});
+{/literal}
+</script>
+<script>
+{literal}
+
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: 'feed',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+
+
+			});
+
+		}
+{/literal}
+</script>

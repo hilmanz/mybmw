@@ -1,0 +1,64 @@
+<head>
+	<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MYBMW</title>
+        <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="BMW Adventure, Bromo, Namibia, BMW F45" />
+        <meta name="keywords" content="BMW Adventure, Bromo, Namibia, BMW F45" />
+        <meta name="author" content="BMW" /> -->
+		<meta property="og:site_name" content="Mybmw"/>
+
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="{$basedomain}home" />
+		<meta property="og:title" content="Mybmw" />
+		<meta property="og:description" content="BMW Adventure, Bromo, Namibia, BMW F45" />
+
+		<meta property="og:locale" content="en_us" />
+		<meta property="og:image" content="https://www.mybmw.co.id/assets/images/sharefb.jpg" />
+		<meta property="og:image:width" content="900">
+		<meta property="og:image:height" content="900">
+
+		{if $pages == 'drivingluxury'}
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@BMW_indonesia" />
+		<meta name="twitter:title" content="Inspire a world of #DrivingLuxury. " />
+		<meta name="twitter:description" content="Share inspiration from the creators of #DrivingLuxury. Visit mybmw.co.id/drivingluxury #BMW7Series." />
+		<meta name="twitter:image" content="{$basedomain}assets/content/luxury/2.jpg" />
+		{/if}
+
+		<meta property="fb:app_id" content="608698679274486" />
+		<link rel="canonical" href="{$basedomain}home" />
+        <link rel="shortcut icon" href="{$basedomain}assets/images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="{$basedomain}assets/vendor/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="{$basedomain}assets/vendor/wow-animate/animate.css" />
+        <link rel="stylesheet" type="text/css" href="{$basedomain}assets/vendor/bmwfont/bmwfont.css" />
+        <link rel="stylesheet" type="text/css" href="{$basedomain}assets/vendor/eufont/eufont.css" />
+        <link rel="stylesheet" type="text/css" href="{$basedomain}assets/vendor/superfish/css/superfish.css" />
+        <link rel="stylesheet" type="text/css" href="{$basedomain}assets/vendor/jquery.bxslider/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="{$basedomain}assets/vendor/magnific-popup/magnific-popup.css" />
+        {if $pages == 'bromo' || $pages == 'namibia' || $pages=='destination' || $pages=='discover' }
+        <link rel="stylesheet" type="text/css" href="{$basedomain}assets/vendor/fullPage/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="{$basedomain}assets/vendor/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="{$basedomain}assets/js/bootstrap-wysihtml5/wysiwyg-color.css" />
+        {/if}
+	{if $pages == 'bromo'}
+		<meta http-equiv="refresh" content="0; url={$basedomain}discover/detail/111">
+	{/if}
+	{if $pages == 'namibia'}
+                <meta http-equiv="refresh" content="0; url={$basedomain}discover/detail/112">
+        {/if}
+        <link rel="stylesheet" type="text/css" href="{$basedomain}assets/css/bmw_newlayout.css" />
+        <link rel="stylesheet" type="text/css" href="{$basedomain}assets/css/banner.css" />
+        <link rel="stylesheet" type="text/css" href="{$basedomain}assets/css/responsive.css" />
+		     <script src="{$basedomain}assets/vendor/jquery.js"></script>
+	<script async type="text/javascript" src="{$basedomain}assets/js/jquery-ui.min.js"></script>
+	<script>
+		var basedomain = "{$basedomain}" ;
+		var basedomainpath = "{$basedomainpath}" ;
+		var pages = "{$pages}" ;
+		var locale = {$locale|@json_encode};
+	</script>
+		<script async type="text/javascript" src="{$basedomain}assets/vendor/modernizr.js"></script>
+		<script>var basedomain = "{$basedomain}";</script>
+    </head>

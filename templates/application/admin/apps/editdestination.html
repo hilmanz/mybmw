@@ -1,0 +1,494 @@
+
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Add New Destination
+            </header>
+            <div class="panel-body">
+                <div class="form">
+                    <form action="{$basedomain}destination/prosesEdit" class="cmxform form-horizontal" id="addpage" method="post" enctype="multipart/form-data">
+					
+								<input type="hidden" placeholder="" class="form-control module" value="{$listDestination[0].id}" name="id" required>
+                                <input type="hidden" placeholder="" class="form-control module" value="{$listDestination[0].module}" name="module" required>
+						<!-- <div class="form-group">
+                            <label class="col-sm-2 control-label">Module </label>
+                            <div class="col-sm-10">
+								 <input type="text" placeholder="" class="form-control module" value="{$listDestination[0].id}" name="id" required>
+                                <input type="text" placeholder="" class="form-control module" value="{$listDestination[0].module}" name="module" required>
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Menu Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="" class="form-control menu" value="{$listDestination[0].menu}" name="menu" required>
+                            </div>
+                        </div>
+                       <div id="content-paralax">
+					   
+					   	<div id="eachcontent" style="display:none">
+							<span class="rowpagescontent"></span>
+                       		<div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2"> Content</label>
+	                            <div class="col-sm-10">
+									 <textarea class="wysihtml5 form-control " rows="6" name="pg_content[]" id="wysihtml5-textarea" required></textarea>
+	                            </div>
+	                        </div>
+	                        <div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2">Dekstop Image</label>
+	                            <div class="col-sm-10">
+	                                <div class="fileupload fileupload-new" data-provides="fileupload">
+	                                    <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+	                                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+	                                    </div>
+	                                    <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+	                                    <div>
+	                                               <span class="btn btn-white btn-file">
+	                                               <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+	                                               <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+	                                               <input type="file" class="default" name="pg_bg_content[]" />
+	                                               </span>
+	                                        <a href="#" class="btn btn-danger  fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+							
+							 <div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2">Ipad Landscape</label>
+	                            <div class="col-sm-10">
+	                                <div class="fileupload fileupload-new" data-provides="fileupload">
+	                                    <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+	                                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+	                                    </div>
+	                                    <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+	                                    <div>
+	                                               <span class="btn btn-white btn-file">
+	                                               <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+	                                               <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+	                                               <input type="file" class="default" name="ipad_lands_content[]" />
+	                                               </span>
+	                                        <a href="#" class="btn btn-danger  fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+							
+							 <div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2">Ipad Potrait</label>
+	                            <div class="col-sm-10">
+	                                <div class="fileupload fileupload-new" data-provides="fileupload">
+	                                    <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+	                                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+	                                    </div>
+	                                    <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+	                                    <div>
+	                                               <span class="btn btn-white btn-file">
+	                                               <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+	                                               <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+	                                               <input type="file" class="default" name="ipad_potrait_content[]" />
+	                                               </span>
+	                                        <a href="#" class="btn btn-danger  fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+							
+							 <div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2">Mobile Phone</label>
+	                            <div class="col-sm-10">
+	                                <div class="fileupload fileupload-new" data-provides="fileupload">
+	                                    <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+	                                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+	                                    </div>
+	                                    <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+	                                    <div>
+	                                               <span class="btn btn-white btn-file">
+	                                               <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+	                                               <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+	                                               <input type="file" class="default" name="mobile_content[]" />
+	                                               </span>
+	                                        <a href="#" class="btn btn-danger  fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+							
+	                        <div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2 ">Alignment</label>
+	                            <div class="col-sm-10 headalignment">
+	                            	<span><input type="radio" class="alignment" name="alignment[1]" value="left">&nbsp;Left&nbsp;&nbsp;&nbsp;</span><span><input type="radio" class="alignment" name="alignment[1]" value="center">&nbsp;Center&nbsp;&nbsp;&nbsp;</span><span><input type="radio" class="alignment" name="alignment[1]" value="right">&nbsp;Right&nbsp;&nbsp;&nbsp;</span>
+	                            </div>
+	                        </div>
+                       </div>
+					   	{if $listDestination}
+							{section name=i loop=$listDestination} 
+								<div id="eachcontent">
+									<span class="rowpagescontent"></span>
+									<div class="form-group">
+										<label class="col-sm-2 control-label col-sm-2"> Content</label>
+										<div class="col-sm-10">
+											 <textarea class="wysihtml5 form-control " rows="6" name="pg_content[]" id="wysihtml5-textarea" required>{$listDestination[i].content} </textarea>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label col-sm-2">Background Image</label>
+										<div class="col-sm-10">
+										{if $listDestination[i].baground!=''}
+											<div class="fileupload fileupload-exists" data-provides="fileupload">
+										{else}
+											<div class="fileupload fileupload-new" data-provides="fileupload">
+										{/if}
+												 <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+													<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+												</div>
+												
+												<div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;">
+													{if $listDestination[i].baground!=''}
+														<img src="{$basedomainpath}public_assets/bmwpic/page/{$listDestination[i].baground}" alt="" />
+														<input type="hidden" name="imgpageold[{$smarty.section.i.index}]" value="{$listDestination[i].baground}">
+													{else}
+														 <img src="" alt="" />
+														 <input type="hidden" name="imgpageold[{$smarty.section.i.index}]" value="">
+													{/if}
+												</div>
+												<div>
+														   <span class="btn btn-white btn-file">
+														    <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+														   <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+														   <input type="file" class="default" name="pg_bg_content[]" />
+														   </span>
+													<a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+												</div>
+											</div>
+										
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label col-sm-2">Ipad Landscape</label>
+									<div class="col-sm-10">
+										{if $listDestination[i].ipad_land_page!=''}
+											<div class="fileupload fileupload-exists" data-provides="fileupload">
+										{else}
+											<div class="fileupload fileupload-new" data-provides="fileupload">
+										{/if}
+												 <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+													<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+												</div>
+												
+												<div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;">
+													{if $listDestination[i].ipad_land_page!=''}
+														<img src="{$basedomainpath}public_assets/bmwpic/page/{$listDestination[i].ipad_land_page}" alt="" />
+														<input type="hidden" name="imglandold[{$smarty.section.i.index}]" value="{$listDestination[i].ipad_land_page}">
+													{else}
+														 <img src="" alt="" />
+														 <input type="hidden" name="imglandold[{$smarty.section.i.index}]" value="">
+													{/if}
+												</div>
+												<div>
+														   <span class="btn btn-white btn-file">
+														    <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+														   <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+														   <input type="file" class="default" name="ipad_lands_content[]" />
+														   </span>
+													<a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+												</div>
+											</div>
+										
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-sm-2 control-label col-sm-2">Ipad Potrait</label>
+									<div class="col-sm-10">
+										{if $listDestination[i].ipad_pot_page!=''}
+											<div class="fileupload fileupload-exists" data-provides="fileupload">
+										{else}
+											<div class="fileupload fileupload-new" data-provides="fileupload">
+										{/if}
+												 <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+													<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+												</div>
+												
+												<div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;">
+													{if $listDestination[i].ipad_pot_page!=''}
+														<img src="{$basedomainpath}public_assets/bmwpic/page/{$listDestination[i].ipad_pot_page}" alt="" />
+														<input type="hidden" name="imgpotold[{$smarty.section.i.index}]" value="{$listDestination[i].ipad_pot_page}">
+													{else}
+														 <img src="" alt="" />
+														 <input type="hidden" name="imgpotold[{$smarty.section.i.index}]" value="">
+													{/if}
+												</div>
+												<div>
+														   <span class="btn btn-white btn-file">
+														    <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+														   <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+														   <input type="file" class="default" name="ipad_potrait_content[]" />
+														   </span>
+													<a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+												</div>
+											</div>
+										
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label col-sm-2">Mobile Phone</label>
+									<div class="col-sm-10">
+										{if $listDestination[i].mobile_bg!=''}
+											<div class="fileupload fileupload-exists" data-provides="fileupload">
+										{else}
+											<div class="fileupload fileupload-new" data-provides="fileupload">
+										{/if}
+												 <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+													<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+												</div>
+												
+												<div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;">
+													{if $listDestination[i].mobile_bg!=''}
+														<img src="{$basedomainpath}public_assets/bmwpic/page/{$listDestination[i].mobile_bg}" alt="" />
+														<input type="hidden" name="imgmobold[{$smarty.section.i.index}]" value="{$listDestination[i].mobile_bg}">
+													{else}
+														 <img src="" alt="" />
+														 <input type="hidden" name="imgmobold[{$smarty.section.i.index}]" value="">
+													{/if}
+												</div>
+												<div>
+														   <span class="btn btn-white btn-file">
+														    <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+														   <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+														   <input type="file" class="default" name="mobile_content[]" />
+														   </span>
+													<a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+												</div>
+											</div>
+										
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-sm-2 control-label col-sm-2 ">Alignment{$listDestination[i].potition}</label>
+										<div class="col-sm-10 headalignment">
+											<span><input type="radio" class="alignment" name="alignment[{$listDestination[i].idPages}]" {if $listDestination[i].potition =='left' } checked="checked" {/if} value="left">&nbsp;Left&nbsp;&nbsp;&nbsp;</span><span><input type="radio" class="alignment" name="alignment[{$listDestination[i].idPages}]" {if $listDestination[i].potition =='center' } checked="checked" {/if} value="center">&nbsp;Center&nbsp;&nbsp;&nbsp;</span><span><input type="radio" class="alignment"  {if $listDestination[i].potition =='right' } checked="checked" {/if}  name="alignment[{$listDestination[i].idPages}]" value="right">&nbsp;Right&nbsp;&nbsp;&nbsp;</span>
+										</div>
+									</div>
+							   </div>
+							 {/section}
+						{/if}
+                      </div> 
+                        <div class="form-group">
+	                    	<label class="col-sm-2 control-label col-sm-2">&nbsp;</label>
+	                        <div class="col-sm-10">    
+	                        	<button class="btn btn-default" type="button" id="addcontent">Add More Content</button>&nbsp;&nbsp;&nbsp;
+	                        	
+	                        </div>
+	                  	</div>
+                        
+                        
+                        <!-- PAGE 1-->
+                        <br/>
+                        <br/>
+                        <div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2 ">Share</label>
+	                            <div class="col-sm-10 headalignment">
+	                            	<span><input type="radio" class="share" {if $listDestination[0].share=='yes'} checked="checked" {/if} name="share" value="yes">&nbsp;Yes&nbsp;&nbsp;&nbsp;</span><span><input type="radio" {if $listDestination[0].share=='no'} checked="checked" {/if} class="share" name="share" value="no">&nbsp;No&nbsp;&nbsp;&nbsp;</span>
+	                            </div>
+	                        </div>
+						<div class="form-group copytextfb">
+	                            <label class="col-sm-2 control-label col-sm-2 ">FB Share</label>
+	                            <div class="col-sm-10 headalignment">
+	                            	<span><input type="text" placeholder="" value="{$listDestination[0].fbshare}" class="form-control fbsharecopytext" name="fbsharecopytext" ></span>
+	                            </div>
+	                     </div>
+						 <div class="form-group copytexttwitter">
+	                            <label class="col-sm-2 control-label col-sm-2 ">Twitter Share</label>
+	                            <div class="col-sm-10 headalignment">
+	                            	<span><input type="text" placeholder="" value="{$listDestination[0].twittershare}" class="form-control twittersharecopytext" name="twittersharecopytext"maxlength="140" ></span>
+	                            </div>
+	                     </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label col-sm-2">Add Gallery</label>
+                            <div class="col-sm-10">    
+                                <input type="checkbox" name="addgallery" {if $listDestination[0].gallery==1} checked="checked" {/if} class="addgallery" value="1">&nbsp;&nbsp;&nbsp;Yes <br/>
+                            </div>
+                        </div>
+                        <div id="photobox" style="display:none;">
+							<div class="form-group" id="gallery" style="display:none" >
+									<label class="col-sm-2 control-label col-sm-2">Gallery Image</label>
+									<div class="col-sm-10">
+										<div class="fileupload fileupload-new" data-provides="fileupload">
+											<div class="fileupload-new thumbnail fileuploadgallery" style="width: 200px; height: 150px;">
+												<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+											</div>
+											<div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+											<div>
+													   <span class="btn btn-white btn-file">
+													   <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+													   <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+													   <input type="file" class="default" name="gallery[]" />
+													   </span>
+												<a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+											</div>
+										</div>
+									</div>
+								</div>
+	                        {if $listDestination[0].gallery==1}
+							
+								<div class="form-group groupnyagallery" id="gallery" >
+									
+										{if $dataGallery}
+										
+											{section name=k loop=$dataGallery}
+											<label class="col-sm-2 control-label col-sm-2">Gallery Image</label>
+												<div class="col-sm-10">		
+												{if $dataGallery[k].id!=''}
+													<div class="fileupload fileupload-exists fileuploadgallery" data-provides="fileupload">
+												{else}
+													<div class="fileupload fileupload-new fileuploadgallery" data-provides="fileupload">
+												{/if}
+										
+												<div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+													<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+												</div>
+												
+												<div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;">
+													{if $dataGallery[k].id!=''}
+														<img src="{$basedomainpath}public_assets/bmwpic/gallery/{$dataGallery[k].file_name}" alt="" />
+														<input type="hidden" name="imggaleold[{$smarty.section.k.index}]" value="{$dataGallery[k].file_name}">
+													{else}
+														 <img src="" alt="" />
+														 <input type="hidden" name="imggaleold[{$smarty.section.k.index}]" value="">
+													{/if}
+												</div>
+												<div>
+														   <span class="btn btn-white btn-file">
+														    <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+														   <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+														   <input type="file" class="default" name="gallery[]" />
+														   </span>
+													<a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+												</div>
+										</div>
+										</div>
+										{/section}
+									{/if}
+									
+									
+								</div>
+	                        {/if}                       
+                        </div>
+                        <div class="form-group" id="btnaddpic" style="display:none;">
+	                    	<label class="col-sm-2 control-label col-sm-2">&nbsp;</label>
+	                    	<div class="col-sm-10">    
+	                        	<button class="btn btn-default" type="button" id="addpic">Add More Image</button>
+	                        </div>
+	                    </div> 
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label col-sm-2">&nbsp;</label>
+                            <div class="col-sm-10">
+                                <input class="btn btn-primary" name="btn_submit" value="submit" type="submit"/>
+                                 <a href="{$basedumain}destination" class="btn btn-default" type="button">Cancel</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script>
+var basedomain = "{$basedomain}" ;
+{literal}
+	$(document).ready(function(){
+		var tempgallery = $('#gallery:first').clone();
+		var tempcontent = $('#eachcontent:first').clone();
+		console.log($('.share:checked').val());
+		if($('.share:checked').val()=='yes')
+		{
+			$('.copytextfb').show();
+			$('.copytexttwitter').show();
+		}
+		else
+		{
+			$('.copytextfb').hide();
+			$('.copytexttwitter').hide();
+		}
+		if($('.addgallery').is(":checked"))
+		{
+			$('#photobox').show();
+			$('#btnaddpic').show();
+			console.log('ssss');
+		}
+		$('.share').change(function(event){
+			if($(this).val()=='yes')
+			{
+				$('.copytextfb').show();
+				$('.copytexttwitter').show();
+			}
+			else
+			{
+				$('.copytextfb').hide();
+				$('.copytexttwitter').hide();
+			}
+		});
+		$('#eachcontent:first').remove();
+			$('#gallery:first').remove();
+		$('.addgallery').click(function(){
+			if(this.checked){
+				$('#photobox').show();
+				$('#btnaddpic').show();
+			}else{
+				$('#photobox').hide();
+				$('.groupnyagallery').remove();
+				$('#btnaddpic').hide();
+			}
+			
+			
+		});
+		$("#addpic").click(function(event){
+			event.preventDefault();
+			tempgallery.show();
+			tempgallery.clone().appendTo("#photobox");
+			
+		});
+		$("#addcontent").click(function(event){
+			
+			event.preventDefault();
+			tempcontent.show();
+			tempcontent.clone().appendTo("#content-paralax");
+			jumlahpagecontent = $('.rowpagescontent').length;
+			$('.headalignment:last').find('.alignment').attr('name','alignment['+jumlahpagecontent+']');
+			console.log();
+			$('.wysihtml5:last').wysihtml5({
+			"style": true,
+			"font-styles": false,
+			"emphasis": true,
+			"lists": false,
+			"html": true,
+			"link": false,
+			"color": true,
+			parser: function(html) {
+				return html;
+			},
+			 stylesheets: [basedomain+"assets/js/bootstrap-wysihtml5/wysiwyg-color.css"],
+		});
+			$('#deletecontent').show();
+		});
+		
+		
+	});
+	$('.wysihtml5').wysihtml5({
+			"style": true,
+			"font-styles": false,
+			"emphasis": true,
+			"lists": false,
+			"html": true,
+			"link": false,
+			"color": true,
+			parser: function(html) {
+				return html;
+			}
+		});
+</script>
+{/literal}

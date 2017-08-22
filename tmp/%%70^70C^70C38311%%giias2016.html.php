@@ -1,0 +1,387 @@
+<?php /* Smarty version 2.6.13, created on 2016-12-28 10:12:14
+         compiled from application/web/apps/giias2016.html */ ?>
+<script src="<?php echo $this->_tpl_vars['basedomain']; ?>
+assets/vendor/EasyEmbed-1.1.1/jquery.easyembed.js"></script>
+
+<?php echo '
+<style type="text/css">
+        /* OVERLAY */
+        .GIIAS2016_video_holder {
+          width: 451px;
+          height: 254px;
+          margin-top: 10px;
+        }
+        .vid_BMWi8 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background:url(\'../assets/content/GIIAS2016/vid_BMW_i8.jpg\') rgba(255, 255, 255, .5);
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        .vid_BMW_M4 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background:url(\'../assets/content/GIIAS2016/vid_BMW_M4_GTS.jpg\') rgba(255, 255, 255, .5);
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        .vid_BMW_440i {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background:url(\'../assets/content/GIIAS2016/vid_BMW_440i.jpg\') rgba(255, 255, 255, .5);
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        .vid_740Li {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background:url(\'../assets/content/GIIAS2016/vid_BMW_740Li.jpg\') rgba(255, 255, 255, .5);
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        @media (max-width: 375px) {
+          .GIIAS2016_video_holder {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        @media (max-width: 320px) {
+          .GIIAS2016_video_holder {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        @media (max-width: 414px) {
+          .GIIAS2016_video_holder {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .play {
+            /*width: 65px;
+            height: 65px;
+            margin: auto;
+            position: absolute;
+            top: 0;right: 0;bottom: 0;left: 0;
+            border-radius: 100%;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            border: 5px solid #ffffff;
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(135deg, #8A66BB 0%, #5B3F80 100%);*/
+            width: 145px;
+            height: 30px;
+            position: absolute;
+            bottom: 5px;
+            left: 10px;
+            z-index: 99;
+            background:url(\'../assets/images/btn_watch_video.png\');
+            background-repeat: no-repeat;
+        }
+
+        .play:hover {
+            background: linear-gradient(135deg, #5B3F80 0%, #8A66BB 100%);
+        }
+
+        .arrow {
+            /*width: 0;
+            height: 0;
+            margin: auto;
+            position: absolute;
+            top: 0;right: -4px;bottom: 0;left: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-left: 16px solid #ffffff;*/
+            width: 145px;
+            height: 30px;
+            background:url(\'../assets/images/btn_watch_video.png\');
+            background-repeat: no-repeat;
+        }
+
+    </style>
+
+<script type="text/javascript">
+  var _fout_queue = _fout_queue || {}; if (_fout_queue.segment === void 0) _fout_queue.segment = {};
+  if (_fout_queue.segment.queue === void 0) _fout_queue.segment.queue = [];
+
+  _fout_queue.segment.queue.push({
+    \'user_id\': 11552,
+    \'advertiser_id\': 2319,
+    \'contractor_id\': 5
+  });
+
+  (function() {
+    var el = document.createElement(\'script\'); el.type = \'text/javascript\'; el.async = true;
+    el.src = ((\'https:\' == document.location.protocol) ? \'https://\' : \'http://\') + \'js.fout.jp/segmentation.js\';
+    var s = document.getElementsByTagName(\'script\')[0]; s.parentNode.insertBefore(el, s);
+  })();
+</script>
+  
+
+
+'; ?>
+
+
+<?php echo $this->_tpl_vars['navigation']; ?>
+
+<div class="btn_request_test_drive">
+  <a href="http://www.bmw.co.id/en/integration/testdrive.html" target="_blank" class="button btnblue">REQUEST A TEST DRIVE</a>
+</div>
+<div id="homepage">
+    <div id="GIAAS2016-slider">
+        <div class="section-header-content">
+            <div class="headingslide">
+                <div class="boxslider">
+                  <ul class="bxslider">
+                      <li>
+                        <img src="<?php echo $this->_tpl_vars['basedomain']; ?>
+assets/content/GIIAS2016/slider/GIIAS2016_slide01.jpg" />
+                        <div class="container">
+                          <div class="headcontent headcontentblack">
+                            <h1>asda WELCOMING DRIVING PLEASURE<br>AT GIIAS 2016.</h1>
+                            <h3>VISIT BMW PAVILION AT GIIAS 2016, ICE BSD,<br>11 - 21 AUGUST.</h3>
+                            <p class="welcome_01">We are happy to showcase the latest BMW line-ups<br>at the Gaikindo International Indonesia Auto Show.</p>
+                            <p class="welcome">Witness the introduction of the most progressive sports car: the BMW i8.</p>
+                            <a href="#BMW_i8" class="button btnblue">Find out more</a>
+                          </div>
+                        </div>
+                      </li>
+                    <li>
+                      <img src="<?php echo $this->_tpl_vars['basedomain']; ?>
+assets/content/GIIAS2016/slider/GIIAS2016_slide02.jpg" />
+                      <div class="container">
+                          <div class="headcontent">
+                              <h1>TRAILBLAZING SPEED AND PERFORMANCE.<br>THE BMW M4 GTS</h1>
+                              <h3>GET UP CLOSE AND PERSONAL WITH THIS BEAST<br>FOR A LIMITED TIME ONLY, 11 - 12 AUG 2016.</h3>
+                              <a href="#BMW_M4" class="button btnblue">Find out more</a>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="<?php echo $this->_tpl_vars['basedomain']; ?>
+assets/content/GIIAS2016/slider/GIIAS2016_slide03.jpg" />
+                      <div class="container">
+                          <div class="row">
+                              <div class="headcontent">
+                                  <h1 style="text-transform:none !important">DESIGNED FOR STYLISH DRIVING PLEASURE.<br>THE BMW 440i M SPORT.</h1>
+                                  
+                                  <a href="#BMW_440i" class="button btnblue">Find out more</a>
+                            </div><!-- /.headcontent -->
+                          </div><!-- /.row -->
+                      </div><!-- /.container -->
+                    </li>
+
+                    <!-- <li>
+                      <img src="<?php echo $this->_tpl_vars['basedomain']; ?>
+assets/content/GIIAS2016/slider/GIIAS2016_slide04.jpg" />
+                      <div class="container">
+                          <div class="headcontent">
+                              <h1>REIGN SUPREME AND RULE THE ROAD.<br>BMW X5 xDrive40e.</h1>
+                              <a href="<?php echo $this->_tpl_vars['basedomain']; ?>
+grantourer" class="button btnblue">Find out more</a>
+                          </div>
+                      </div>
+                    </li> -->
+                    <li>
+                      <img src="<?php echo $this->_tpl_vars['basedomain']; ?>
+assets/content/GIIAS2016/slider/GIIAS2016_slide05.jpg" />
+                      <div class="container">
+                        <div class="headcontent">
+                            <h1 style="text-transform:none !important">THE SENSATION OF PURE DRIVING LUXURY.<br>THE BMW 740Li PURE EXCELLENCE.</h1>
+                            <a href="#BMW_740Li" class="button btnblue">Find out more</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div><!-- end .section-header-content -->
+    </div><!-- end #section-header -->
+</div><!-- /#giias2016 -->
+
+ 
+  <section id="BMW_i8">
+    <div class="video-image-holder">
+      <h2>THE MOST PROGRESSIVE CAR HAS ARRIVED.<br>THE BMW i8.</h2>
+      <p>The BMW i8 features a completely new, exciting sports car design that includes comprehensive, sophisticated aerodynamic features and environmentally friendly material that inspires design and a new understanding of premium.</p>
+      <p><a onclick="pindah('http://www.bmw.co.id/en/all-models/bmw-i/i8/2014/at-a-glance.html','btn_BMW_M4')" href="javascript:void(0)" target="_blank" class="button btnblue">LEARN MORE</a></p>
+      <div class="GIIAS2016_video_holder">
+        <div data-easy-embed="youtube:7P4RbFh246Q">
+            <div class="vid_BMWi8">
+                <div class="play">
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>    
+  </section>  
+<!-- <section id="BMW_i8">
+  <div class="video-image-holder">
+    <h2>THE MOST PROGRESSIVE CAR HAS ARRIVED.<br>THE BMW i8.</h2>
+    <p>The BMW i8 features a completely new, exciting sports car design that includes comprehensive,sophisticated aerodynamic features and environmentally friendly material that inspires design and a new understanding of premium.</p>
+    <p><a href="http://www.bmw.co.id/en/all-models/bmw-i/i8/2014/at-a-glance.html" target="_blank" class="button btnblue">LEARN MORE</a></p>
+    <img src="<?php echo $this->_tpl_vars['basedomain']; ?>
+assets/content/GIIAS2016/vid_BMW_i8.jpg" alt="" />
+    <a href="#" class="watch-video"><img src="<?php echo $this->_tpl_vars['basedomain']; ?>
+assets/images/btn_watch_video.png" ></a>
+  </div>    
+</section> -->
+<section id="BMW_M4">
+  <div class="video-image-holder">
+    <h2 style="padding-top:110px;">TRAILBLAZING SPEED AND PERFORMANCE.<br>THE BMW M4 GTS</h2>
+    <p>With a limited top speed of 305 km/h and 0-100 km/h in 3.8 seconds, the BMW M4 GTS was conceived with an eye for trailblazing technology and a keen focus on the racetrack. The limited production number of 700 units worldwide enhances the exclusive nature of the BMW M4 GTS.</p>
+    <p>Get up close and personal with this beast for a limited time only, 11-12 Aug 2016.</p>
+    <a onclick="pindah('http://www.bmw.co.id/en/all-models/m-series/m4-coupe/2014/start.html','btn_BMW_M4')" href="javascript:void(0)" target="_blank" class="button btnblue">LEARN MORE</a>
+    <div class="GIIAS2016_video_holder">
+      <div data-easy-embed="youtube:QOXkhImr4ss">
+          <div class="vid_BMW_M4">
+              <div class="play">
+                  <div class="arrow"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <br><br>
+  </div>
+</section>
+<section id="BMW_440i">
+  <div class="video-image-holder">
+    <h2>DESIGNED FOR STYLISH DRIVING PLEASURE.<br>THE BMW 440i M SPORT.</h2>
+    <p>The BMW 440i Coupé M Sport is capable of 0-100 km/h in five seconds. Despite its more powerful engine, the new engine of the BMW 440i Coupé M Sport is 12% more fuel efficient than its predecessor.</p>
+    <a onclick="pindah('http://www.bmw.co.id/en/all-models/4-series/coupe/2013/start.html','btn_BMW_440i')" href="javascript:void(0)" target="_blank" class="button btnblue">LEARN MORE</a>
+    <div class="GIIAS2016_video_holder">
+      <div data-easy-embed="youtube:W51_zMZ12-A">
+          <div class="vid_BMW_440i">
+              <div class="play">
+                  <div class="arrow"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="BMW_740Li">
+  <div class="video-image-holder">
+    <h2 style="padding-top:50px;">THE SENSATION OF PURE DRIVING LUXURY.<br>THE BMW 740Li PURE EXCELLENCE.</h2>
+    <p>The BMW 740Li Pure Excellence represents pure elegance and the expression of exclusive personality. Elements in high-gloss Chrome on the exterior and extensive wooden features in the interior underline the contemporary and luxurious character of the BMW 7 Series with unique handicraft.</p>
+    <a onclick="pindah('http://www.bmw.co.id/en/all-models/7-series/sedan/2015/at-a-glance.html','btn_BMW_740Li')" href="javascript:void(0)" target="_blank" class="button btnblue">LEARN MORE</a>
+    <div class="GIIAS2016_video_holder">
+      <div data-easy-embed="youtube:nC9eqNRNCSI">
+          <div class="vid_740Li">
+              <div class="play">
+                  <div class="arrow"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="GIIAS2016-bottom" class="section">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>ESCAPE THE ORDINARY WITH<br>BMW FINANCIAL SERVICE</h2>
+          <h3>YOUR DREAM CAR IS JUST AROUND THE CORNER</h3>
+          <p>
+            <br>Find out more details about financial schemes<br>by reaching us at:
+          </p>
+          <p>
+            BMW Call Center<br>
+            021 - 2927 9677<br>
+            Mon-Fri, 09.00 - 17.00
+          </p>
+          <p>Or write us an email to contact.us@bmw.co.id</p>
+          <div class="row">
+            <div class="col-md-6">
+              <p>Powered by:<br><img src="<?php echo $this->_tpl_vars['basedomain']; ?>
+assets/content/GIIAS2016/maybank_logo.png" alt="Maybank Finance" /></p>
+            </div>
+            <div class="col-md-6">
+              <a href="<?php echo $this->_tpl_vars['basedomain']; ?>
+assets/content/BMWIndonesia_FinancingScheme_GIIAS2016.pdf" target="_blank" class="button btnblue pull-right dl_finance">
+                <i class="fa fa-download fa-lg"></i> Download Financing Package
+              </a>
+            </div>
+          </div>
+          
+          <p><img class="img_sunglasses" src="<?php echo $this->_tpl_vars['basedomain']; ?>
+assets/content/GIIAS2016/man_sunglasses.jpg" alt="" /></p>
+        </div>
+      </div><!-- end .row -->
+  </div><!-- end .container -->
+</section>
+
+<div class="social">
+	<a class="facebookshare" href="javascript:void(0)" onclick="shareFB('MyBMW','<?php echo $this->_tpl_vars['basedomain']; ?>
+missionimpossible','<?php echo $this->_tpl_vars['basedomain']; ?>
+assets/content/GIIAS2016/BMW_GIIAS2016_fb.jpg','','Celebrate #TheNext100Years and visit BMW Pavillion at GIIAS 2016 <?php echo $this->_tpl_vars['basedomain']; ?>
+programs/GIIAS2016')"><i class="icon-facebook">&nbsp;</i></a>
+	<!-- <a class="trigertwitter" href="#" ><i class="icon-twitter">&nbsp;</i></a> -->
+	
+	<a  id="twittershare" class="twittershare" href="http://twitter.com/share?text=Celebrate%20%23TheNext100Years%20and%20visit%20BMW%20Pavillion%20at%20GIIAS%202016 <?php echo $this->_tpl_vars['basedomain']; ?>
+programs/GIIAS2016"  target="_blank"><i class="icon-twitter">&nbsp;</i></a>
+</div>
+<footer id="footer">
+ <?php echo $this->_tpl_vars['footer']; ?>
+
+</footer>
+
+
+<script>
+<?php echo '
+function pindah(url,link_name)
+{
+var  linkname = link_name;
+//alert("sukses"+url);
+
+				$.ajax({
+                        \'type\': \'POST\',
+                        \'url\': basedomain+\'programs/tracking\',
+                        \'data\': {linkname:linkname},
+						\'dataType\':\'json\',
+                        \'success\': function(result){								
+								//window.location = url;
+								window.open(url, "_blank");
+						}
+						
+
+					})
+					
+}
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: \'feed\',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+
+
+			});
+
+		}
+
+'; ?>
+
+</script>

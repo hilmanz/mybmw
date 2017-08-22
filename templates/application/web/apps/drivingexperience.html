@@ -1,0 +1,131 @@
+
+{$navigation}
+<div id="promotionDetail">
+    <section id="drivingexperience" class="section autoheight">
+        <div class="thecontent" style="padding:70px 0 70px;">
+            <div class="container">
+                <div class="row">
+                    <div class="promocontent">
+                        <h2>BMW DRIVING EXPERIENCE 2016.<br>WINTER DRIVING ARJEPLOG, SWEDEN.</h2>
+						<h3>THE REASON FOR ADVENTURE BEGINS NOW.</h3>
+                     	<p>BMW invites you to experience winter through
+wide-open spaces of the rugged landscape in
+Sweden on 23 - 27 February 2016 to drive
+dynamic and high-speed drifts. Discover a thrilling
+experience behind the wheel of a BMW M4
+Coupé that guarantees spectacular and
+unforgettable memories.</p>
+
+<p>Receive 15% off and 0% 3 months instalment with
+HSBC Premier MasterCard and HSBC Visa Signature.
+Valid at Turkish Airlines ticketing offices in Jakarta.</p>
+
+                        <div class="actbtn"><a href="{$basedomain}drivingexperienceregistration" class="button btnblue">KEEP ME INFORMED</a>
+                       <a href="{$basedomain}assets/download/Sweeden_Brochure.pdf" class="button btnwhite"><i class="icon-download"></i>Download E-Brochure</a>
+                           </div>
+                        <p><span class="small">Find out more:<br>
+BMW Call Center at (021) 2927 9677 (Mon–Fri, 09.00-17.00)</span></p>
+                    </div><!-- end .col-md-6 -->
+                </div><!-- end .row -->
+            </div><!-- end .container -->
+        </div><!-- end .thecontent -->
+        <div class="support">
+            <div class="container">
+                <img src="{$basedomain}assets/content/embassy.png">
+                <img src="{$basedomain}assets/content/turkish.png">
+                <img src="{$basedomain}assets/content/hsbc.png">
+            </div><!-- end .container -->
+        </div>
+    </section>
+    <section class="section">
+        <div class="thecontentDetail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="{$basedomain}drivingexperienceregistration">
+                        <div class="boxexp boxbanner">
+                            <img src="{$basedomain}assets/content/400xMunich.jpg" />
+                            <div class="boxexp-caption">
+                                <h3>BMW DRIVING LUXURY. MUNICH, GERMANY.</h3>
+                                <p>5 – 9 JULY 2016</p>
+                                <i class="icon-triple_arrow_cta2"></i>
+                            </div>
+                        </div>
+                        </a>
+                    </div><!-- end .col-md-4 -->
+                    <div class="col-md-4">
+                        <a href="{$basedomain}drivingexperienceregistration">
+                        <div class="boxexp boxbanner boxexpwhite">
+                            <img src="{$basedomain}assets/content/400xNewZealand.jpg" />
+                            <div class="boxexp-caption">
+                                <h3>BMW ALPHINE xDRIVE. QUEENSTOWN, NEW ZEALAND.</h3>
+                                <p>17 – 19 AUGUST 2016</p>
+                                <i class="icon-triple_arrow_cta"></i>
+                            </div>
+                        </div>
+                        </a>
+                    </div><!-- end .col-md-4 -->
+                    <div class="col-md-4">
+                        <a href="{$basedomain}drivingexperienceregistration">
+                        <div class="boxexp boxbanner">
+                            <img src="{$basedomain}assets/content/400xNamibia.jpg" />
+                            <div class="boxexp-caption">
+                                <h3>BMW DRIVING EXPERIENCE.<br> NAMIBIA MULTIDAY TOUR.</h3>
+                                <p>5 – 12 DECEMBER 2016</p>
+                                <i class="icon-triple_arrow_cta2"></i>
+                            </div>
+                        </div>
+                        </a>
+                    </div><!-- end .col-md-4 -->
+                    <div class="col-md-12">
+                        <div class="row contentblack"  style="padding:20px 0 0 15px;">
+                        <p><small>*Travel period and program details are subject to change.<br>   Reservation will be on first come first serve basis.</small></p>
+                        </div>
+                    </div>
+                </div><!-- end .row -->
+            </div><!-- end .container -->
+        </div><!-- end .thecontent -->
+    </section>
+</div>
+<footer id="footer">
+{$footer}
+</footer>
+
+<script>
+{literal}
+$(document).ready(function(){
+			$(".twittershare").on("click", function(){
+			var  typenya = 2;
+
+				$.ajax({
+                        'type': 'POST',
+                        'url': basedomain+'tracking',
+                        'data': {typenya:typenya},
+						'dataType':'json'
+
+					})
+				});
+			});
+{/literal}
+</script>
+<script>
+{literal}
+
+	function shareFB(fb_name,fb_link,fb_img,fb_user,fb_post){
+			$("#bg-popup").fadeOut();
+			$(".popup,.popup2").fadeOut();
+			FB.init();
+			FB.ui({
+				method: 'feed',
+				name: fb_name,
+				link: fb_link,
+				picture: fb_img,
+				caption: fb_user,
+				description: fb_post
+
+
+			});
+
+		}
+{/literal}
+</script>

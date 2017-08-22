@@ -1,0 +1,183 @@
+
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Add New Destination
+            </header>
+            <div class="panel-body">
+                <div class="form">
+                    <form action="{$basedomain}adddestination" class="cmxform form-horizontal" id="addpage" method="post" enctype="multipart/form-data">
+						 <div class="form-group">
+                            <label class="col-sm-2 control-label">Module </label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="" class="form-control module" name="module" required>
+                            </div>
+                        </div>
+						<div class="form-group">
+                            <label class="col-sm-2 control-label">Menu  Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="" class="form-control menu" name="menu" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Title</label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="" class="form-control title" name="title" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label col-sm-2"> Description</label>
+                            <div class="col-sm-10">
+                                <textarea class="wysihtml5 form-control desc" rows="6" name="desc" id="wysihtml5-textarea" required></textarea>
+                            </div>
+                        </div>
+                       <hr>
+                        <!-- PAGE 1-->
+						<div class="pgecontentnya">
+							
+							<div class="form-group">
+							<span class="rowpagescontent"></span>
+								<label class="col-sm-2 control-label col-sm-2">Page 1 Content</label>
+								<div class="col-sm-10">
+									<textarea class="wysihtml5 form-control" rows="6" name="pg_content[]" id="wysihtml5-textarea" required></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label col-sm-2"> Position Page 1 </label>
+								<div class="col-sm-10">
+								  <input type="radio" name="pg_possitionpage[1]" checked="checked" value="1">Right
+								   <input type="radio" name="pg_possitionpage[1]" value="2">Center
+									<input type="radio" name="pg_possitionpage[1]" value="3">Left
+								</div>
+							</div>
+							 <div class="form-group">
+								<label class="col-sm-2 control-label col-sm-2">Page 1 Background</label>
+								<div class="col-sm-10">
+									<div class="fileupload fileupload-new" data-provides="fileupload">
+										<div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+											<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+										</div>
+										<div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+										<div>
+												   <span class="btn btn-white btn-file">
+												   <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+												   <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+												   <input type="file" class="default" name="pg_bg_content[]" required/>
+												   </span>
+											<a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <br/>
+                        <br/>
+						 <div class="form-group">
+                            <label class="col-sm-2 control-label col-sm-2">&nbsp;</label>
+                            <div class="col-sm-10">    
+                                <button class="btn btn-default" type="button" id="addpagecontennyades">Add Content Page</button>
+                            </div>
+                        </div>
+                       
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label col-sm-2">&nbsp;</label>
+                            <div class="col-sm-10">    
+                                <button class="btn btn-default" type="button" id="addpic">Add Gallery Image</button>
+                            </div>
+                        </div>
+						
+                        <div id="photobox">
+							             
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label col-sm-2">&nbsp;</label>
+                            <div class="col-sm-10">
+                                <input class="btn btn-primary" name="btn_submit" value="submit" type="submit"/>
+                                <button class="btn btn-default" type="button">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{literal}
+<script>
+	$(document).ready(function(){
+		var tempclone = $('#gallery').clone();
+		$("#addpic").click(function(){
+			//event.preventDefault();
+		//	tempclone.clone().appendTo("#photobox");
+		
+		//$("#gallery").clone().appendTo("#photobox");
+		//console.log($(".fileuploadgallery:last").html('  <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />'));
+		var str='';
+		 str+='<div class="form-group" id="gallery" >';
+		 str+='<label class="col-sm-2 control-label col-sm-2">Gallery Image</label>';
+		 str+='<div class="col-sm-10">';
+		str+='<div class="fileupload fileupload-new" data-provides="fileupload">';
+		 str+='<div class="fileupload-new thumbnail fileuploadgallery" style="width: 200px; height: 150px;">';
+		 str+='<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />';
+		str+='</div>';
+		str+='<div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>';
+		str+='<div>';
+		str+='<span class="btn btn-white btn-file">';
+		str+=' <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>';
+		str+=' <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>';
+		str+=' <input type="file" class="default" name="gallery[]" required/>';
+		str+=' </span>';
+		str+='<a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>';
+		str+='</div>	</div></div></div>';
+		$('#photobox').append(str);
+			
+		});
+		
+		$("#addpagecontennyades").click(function(e){
+		e.preventDefault();
+			jumlahpagecontent = $('.rowpagescontent').length;
+			console.log(jumlahpagecontent);
+			var str='';
+				str+='<div class="form-group"><span class="rowpagescontent"></span>';
+				str+='<label class="col-sm-2 control-label col-sm-2">Page '+(jumlahpagecontent+1)+' Content</label>';
+				str+='<div class="col-sm-10">';
+				str+='<textarea class="wysihtml5 form-control pg_content" rows="6" name="pg_content[]" id="wysihtml5-textarea" required></textarea>';
+				str+='</div></div>';
+				str+='<div class="form-group">';
+				str+='<label class="col-sm-2 control-label col-sm-2"> Position Page '+(jumlahpagecontent+1)+' </label>';
+				str+='<div class="col-sm-10">';
+				str+='<input type="radio" name="pg_possitionpage['+(jumlahpagecontent+1)+']" checked="checked" value="1">Right';
+				str+='<input type="radio" name="pg_possitionpage['+(jumlahpagecontent+1)+']" value="2">Center';
+				str+='<input type="radio" name="pg_possitionpage['+(jumlahpagecontent+1)+']" value="3">Left';
+				str+='</div>';
+				str+='</div>';
+					str+='<div class="form-group">';
+								str+='<label class="col-sm-2 control-label col-sm-2">Page '+(jumlahpagecontent+1)+' Background</label>';
+								str+='<div class="col-sm-10">';
+									str+='<div class="fileupload fileupload-new" data-provides="fileupload">';
+										str+='<div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">';
+											str+='<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />';
+										str+='</div>';
+										str+='<div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>';
+										str+='<div>';
+												   str+='<span class="btn btn-white btn-file">';
+												  str+=' <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>';
+												   str+='<span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>';
+												  str+=' <input type="file" class="default" name="pg_bg_content[]" required/>';
+												  str+=' </span>'
+											str+='<a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>';
+										str+='</div></div></div></div>';
+			$('.pgecontentnya').append(str);
+			$('.wysihtml5:last').wysihtml5();
+		});
+	});
+	$('#addpage').submit(function()
+	{
+		console.log('kecap');
+		return false;
+	
+	});
+</script>
+{/literal}

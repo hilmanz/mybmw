@@ -1,0 +1,391 @@
+
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Add New Discover
+            </header>
+            <div class="panel-body">
+                <div class="form">
+                    <form onsubmit="return validateForm()" name="myForm" action="{$basedomain}adddestination" class="cmxform form-horizontal" id="addpage" method="post" enctype="multipart/form-data">
+					<!-- 	<div class="form-group">
+                            <label class="col-sm-2 control-label">Module </label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="" class="form-control module" name="module" required>
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Menu Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="" class="form-control menu" name="menu" >
+								  <label style="display:none; color:red;"  class="fr red namekosong" > You cannot leave this field empty</label>
+                            </div>
+                        </div>
+                       <div id="content-paralax">
+                       	<div id="eachcontent">
+						<span class="rowpagescontent"></span>
+                       		<div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2"> Content</label>
+	                            <div class="col-sm-10">
+									 <textarea class="wysihtml5 form-control pg_content" rows="6" name="pg_content[]" id="wysihtml5-textarea" ></textarea>
+	                            </div>
+	                        </div>
+	                        <div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2">Dekstop Image</label>
+	                            <div class="col-sm-10">
+	                                <div class="fileupload fileupload-new" data-provides="fileupload">
+	                                    <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+	                                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+	                                    </div>
+	                                    <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+	                                    <div>
+	                                               <span class="btn btn-white btn-file">
+	                                               <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+	                                               <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+	                                               <input type="file" class="default" name="pg_bg_content[]" />
+	                                               </span>
+	                                        <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+							 
+							    <div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2">Ipad Landscape</label>
+	                            <div class="col-sm-10">
+	                                <div class="fileupload fileupload-new" data-provides="fileupload">
+	                                    <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+	                                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+	                                    </div>
+	                                    <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+	                                    <div>
+	                                               <span class="btn btn-white btn-file">
+	                                               <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+	                                               <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+	                                               <input type="file" class="default" name="ipad_lands_content[]" />
+	                                               </span>
+	                                        <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+							
+							   <div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2">Ipad Potrait</label>
+	                            <div class="col-sm-10">
+	                                <div class="fileupload fileupload-new" data-provides="fileupload">
+	                                    <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+	                                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+	                                    </div>
+	                                    <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+	                                    <div>
+	                                               <span class="btn btn-white btn-file">
+	                                               <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+	                                               <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+	                                               <input type="file" class="default" name="ipad_potrait_content[]" />
+	                                               </span>
+	                                        <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+							
+							
+							   <div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2">Mobile Phone</label>
+	                            <div class="col-sm-10">
+	                                <div class="fileupload fileupload-new" data-provides="fileupload">
+	                                    <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+	                                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+	                                    </div>
+	                                    <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+	                                    <div>
+	                                               <span class="btn btn-white btn-file">
+	                                               <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+	                                               <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+	                                               <input type="file" class="default" name="mobile_content[]" />
+	                                               </span>
+	                                        <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+							
+							
+	                        <div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2 ">Alignment</label>
+	                            <div class="col-sm-10 headalignment">
+	                            	<span><input type="radio" class="alignment" name="alignment[1]" value="left">&nbsp;Left&nbsp;&nbsp;&nbsp;</span><span><input type="radio" class="alignment" name="alignment[1]" value="center">&nbsp;Center&nbsp;&nbsp;&nbsp;</span><span><input type="radio" class="alignment" name="alignment[1]" value="right">&nbsp;Right&nbsp;&nbsp;&nbsp;</span>
+	                            </div>
+	                        </div>
+                       </div>
+                      </div> 
+                        <div class="form-group">
+	                    	<label class="col-sm-2 control-label col-sm-2">&nbsp;</label>
+	                        <div class="col-sm-10">    
+	                        	<button class="btn btn-default" type="button" id="addcontent">Add More Content</button>&nbsp;&nbsp;&nbsp;
+	                        	
+	                        </div>
+	                  	</div>
+                        
+                        
+                        <!-- PAGE 1-->
+                        <br/>
+                        <br/>
+                        <div class="form-group">
+	                            <label class="col-sm-2 control-label col-sm-2 ">Share</label>
+	                            <div class="col-sm-10 headalignment">
+	                            	<span><input type="radio" class="share" checked name="share" value="yes">&nbsp;Yes&nbsp;&nbsp;&nbsp;</span><span><input type="radio" class="share" name="share" value="no">&nbsp;No&nbsp;&nbsp;&nbsp;</span>
+	                            </div>
+	                        </div>
+						<div class="form-group copytextfb">
+	                            <label class="col-sm-2 control-label col-sm-2 ">FB Share</label>
+	                            <div class="col-sm-10 headalignment">
+	                            	<span><input type="text" placeholder="" class="form-control fbsharecopytext" name="fbsharecopytext" ></span>
+	                            </div>
+	                     </div>
+						 <div class="form-group copytexttwitter">
+	                            <label class="col-sm-2 control-label col-sm-2 ">Twitter Share</label>
+	                            <div class="col-sm-10 headalignment">
+	                            	<span><input type="text" placeholder="" class="form-control twittersharecopytext" name="twittersharecopytext"maxlength="140" ></span>
+	                            </div>
+	                     </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label col-sm-2">Add Gallery</label>
+                            <div class="col-sm-10">    
+                                <input type="checkbox" name="addgallery" class="addgallery" value="1">&nbsp;&nbsp;&nbsp;Yes <br/>
+                            </div>
+                        </div>
+						
+						
+                        <div id="photobox" style="display:none;">
+	                        <div class="form-group" id="gallery" >
+	                            <label class="col-sm-2 control-label col-sm-2">Gallery Image</label>
+	                            <div class="col-sm-10">
+	                                <div class="fileupload fileupload-new" data-provides="fileupload">
+	                                    <div class="fileupload-new thumbnail fileuploadgallery" style="width: 200px; height: 150px;">
+	                                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+	                                    </div>
+	                                    <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+	                                    <div>
+	                                               <span class="btn btn-white btn-file">
+	                                               <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image</span>
+	                                               <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+	                                               <input type="file" class="default" name="gallery[]" />
+	                                               </span>
+	                                        <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="fa fa-trash"></i> Remove</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                                               
+                        </div>
+						<div class="form-group" id="photobox2" style="display:none;">
+	                            <label class="col-sm-2 control-label col-sm-2">Content For Galery</label>
+	                            <div class="col-sm-10">
+									 <textarea class="wysihtml5 form-control pg_content" rows="6" name="gal_content[]" id="wysihtml5-textarea" ></textarea>
+	                            </div>
+	                     </div>
+                        <div class="form-group" id="btnaddpic" style="display:none;">
+	                    	<label class="col-sm-2 control-label col-sm-2">&nbsp;</label>
+	                    	<div class="col-sm-10">    
+	                        	<button class="btn btn-default" type="button" id="addpic">Add More Image</button>
+	                        </div>
+	                    </div> 
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label col-sm-2">&nbsp;</label>
+                            <div class="col-sm-10">
+                                <input class="btn btn-primary" name="btn_submit" value="submit" type="submit"/>
+                                <a href="{$basedumain}destination" class="btn btn-default" type="button">Cancel</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+<script>
+
+{literal}
+var valid='';
+
+			function validateForm() {
+			
+									var menu = document.forms["myForm"]["menu"].value;
+									var share = document.forms["myForm"]["share"].value;
+									var copytextfb = document.forms["myForm"]["fbsharecopytext"].value;
+									var copytexttwitter = document.forms["myForm"]["twittersharecopytext"].value;
+								
+									var valid='';
+									$('.menu').removeClass('error');
+								
+									
+									if (menu == null || menu == ""  ) {
+										//console.log('ss');
+										if (menu == null || menu == "") {
+										$('.menu').addClass('error');
+										$('.menu').focus();
+										valid='ada';
+											
+										}else{
+										$('.menu').removeClass('error');
+									
+										}
+										
+										
+									
+										
+									
+									
+									}
+									if(share=='yes')
+										{
+											if (copytexttwitter == null || copytexttwitter == ""  ) {
+												
+												$('.twittersharecopytext').addClass('error');
+												$('.twittersharecopytext').focus();
+												valid='ada';
+												
+												
+										
+										
+											}
+											else
+											{
+												$('.menu').removeClass('error');
+												
+											}
+											if (copytextfb == null || copytextfb == "" ) {
+												
+												$('.fbsharecopytext').addClass('error');
+												$('.fbsharecopytext').focus();
+												valid='ada';
+											}
+											else
+											{
+												$('.menu').removeClass('error');
+												
+											}
+										}
+										if(valid)
+										{
+									
+												return false;
+										}
+										else
+										{
+											return true;
+										}
+									}
+							
+                $('.jenisperusahaan').change(function(e){
+						//console.log($(this).val());
+						if($(this).val()=='Coorporate')
+						{
+						 $('.mandatory').show();
+						}else{
+						
+						$('.mandatory').hide();
+						}
+				
+				});
+			
+{/literal}
+</script>
+
+
+<script>
+
+
+var basedomain = "{$basedomain}" ;
+{literal}
+	$(document).ready(function(){
+		var tempgallery = $('#gallery').clone();
+		var tempcontent = $('#eachcontent').clone();
+		
+		$('.addgallery').click(function(){
+			if(this.checked){
+				$('#photobox').show();
+				$('#btnaddpic').show();
+			}else{
+				$('#photobox').hide();
+				$('#btnaddpic').hide();
+			}
+			
+			
+		});
+		if($('.share').val()=='yes')
+		{
+			$('.copytextfb').show();
+			$('.copytexttwitter').show();
+		}
+		else
+		{
+			$('.copytextfb').hide();
+			$('.copytexttwitter').hide();
+		}
+		$("#addpic").click(function(event){
+			event.preventDefault();
+			tempgallery.clone().appendTo("#photobox");
+			
+		});
+		$('.share').change(function(event){
+			if($(this).val()=='yes')
+			{
+				$('.copytextfb').show();
+				$('.copytexttwitter').show();
+			}
+			else
+			{
+				$('.copytextfb').hide();
+				$('.copytexttwitter').hide();
+			}
+		});
+		var tambah=1;
+		$("#addcontent").click(function(event){
+		
+			tambah=tambah+1;
+			event.preventDefault();
+			tempcontent.clone().appendTo("#content-paralax");
+			jumlahpagecontent = $('.rowpagescontent').length;
+			$('.alignment:last').attr('name','alignment['+tambah+']');
+			$('.alignment:last').parent().prev().children().attr('name','alignment['+tambah+']');
+			$('.alignment:last').parent().prev().prev().children().attr('name','alignment['+tambah+']');
+			//console.log(tambah);
+			$('.wysihtml5:last').wysihtml5({
+			"style": true,
+			"font-styles": false,
+			"emphasis": true,
+			"lists": false,
+			"html": true,
+			"link": false,
+			"color": true,
+			parser: function(html) {
+				return html;
+			},
+			 stylesheets: [basedomain+"assets/js/bootstrap-wysihtml5/wysiwyg-color.css"],
+		});
+			$('#deletecontent').show();
+		});
+		
+		
+	});
+	$('.wysihtml5').wysihtml5({
+			"style": true,
+			"font-styles": false,
+			"emphasis": true,
+			"lists": false,
+			"html": true,
+			"link": false,
+			"color": true,
+			parser: function(html) {
+				return html;
+			}
+		});
+</script>
+{/literal}

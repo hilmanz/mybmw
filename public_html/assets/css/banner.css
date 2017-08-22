@@ -1,0 +1,220 @@
+#banner {
+	background-image:url(../images/1.jpg);
+	color:transparent;
+	background-size:cover;
+	background-position:0 40px;
+	background-repeat:no-repeat;
+	background-attachment:fixed
+}
+.section {
+	background-size:cover;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	z-index:10;
+	left:0;
+	overflow:hidden
+}
+.sections {
+	background-size:cover;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	z-index:10;
+	left:0
+}
+.the-activetourerpersonality{
+	background-image:url(../images/activetourerpersonality.jpg);
+	background-size:cover;
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+.the-grantourerpersonality{
+	background-image:url(../images/grantourerpersonality.jpg);
+	background-size:cover;
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+#section2 {
+	background-image:url(../images/2.jpg);
+	background-attachment:fixed
+}
+#section3 {
+	background-image:url(../images/3.jpg)
+}
+#section4 {
+	background-image:url(../images/4.jpg);
+	z-index:102
+}
+#f45-1 {
+	background-image:url(../images/1.jpg);
+	background-attachment:fixed
+}
+#gran {
+	background-image:url(../images/gran.jpg);
+	background-attachment:fixed
+}
+#f45Detail #f45-1 {
+	background-attachment:scroll
+}
+#f45-2 {
+	background-image:url(../images/f45-2.jpg)
+}
+#f45-3 {
+	background-image:url(../images/f45-3.jpg);
+	background-attachment:fixed
+}
+#f45-4 {
+	background-image:url(../images/f45-4.jpg);
+	background-attachment:fixed
+}
+#promo {
+	background-image:url(../images/promotion.jpg);
+	background-attachment:scroll
+}
+#promo2 {
+	background-image:url(../images/promotion2.jpg);
+	background-attachment:scroll
+}
+#THEBMWX1 {
+	background-image:url(../images/THEBMWX1.jpg);
+	background-attachment:scroll
+}
+#NationalPromo {
+	background:url(../images/nationalprogram_banner.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+@media only screen and (max-width: 767px) {
+
+}
+
+#BMW5Series {
+	background-image:url(../images/5series.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:#000000;
+	/* background-attachment:scroll;
+    background-size:100%;
+	background-position: center;*/
+}
+#BMW3SeriesBestindo {
+	background-image:url(../images/BMW3SeriesBestindo.jpg);
+	background-attachment:scroll;
+	background-size:100%;
+	background-position: center;
+}
+#drivingexperience {
+	background-image:url(../content/1300x800_driving.jpg);
+	background-attachment:scroll
+}
+#BMW3Series {
+	background-image:url(../images/BMW3Series2.jpg);
+	background-attachment:scroll
+}
+#giias-1 {
+	background-image:url(../images/giias.jpg);
+	background-attachment:scroll
+}
+#giias-2 {
+	background-image:url(../images/giias2.jpg);
+	background-attachment:scroll
+}
+#bromo-1 {
+	background-image:url(../images/bromo-1.jpg)
+}
+#bromo-2 {
+	background-image:url(../images/bromo-2.jpg)
+}
+#bromo-3 {
+	background-image:url(../images/bromo-3.jpg)
+}
+#namibia-1 {
+	background-image:url(../images/namibia-1.jpg)
+}
+#namibia-2 {
+	background-image:url(../images/namibia-2.jpg)
+}
+#namibia-3 {
+	background-image:url(../images/namibia-3.jpg)
+}
+#namibia-4 {
+	background-image:url(../images/namibia-4.jpg)
+}
+#namibia-5 {
+	background:#fff
+}
+@-webkit-keyframes imageAnimation {
+0% {
+opacity:0;
+-webkit-animation-timing-function:ease-in
+}
+50% {
+opacity:.5
+}
+100% {
+opacity:1
+}
+}
+@-moz-keyframes imageAnimation {
+0% {
+opacity:0;
+-moz-animation-timing-function:ease-in
+}
+50% {
+opacity:.5
+}
+100% {
+opacity:1
+}
+}
+@-o-keyframes imageAnimation {
+0% {
+opacity:0;
+-o-animation-timing-function:ease-in
+}
+50% {
+opacity:.5
+}
+100% {
+opacity:1
+}
+}
+@-ms-keyframes imageAnimation {
+0% {
+opacity:0;
+-ms-animation-timing-function:ease-in
+}
+50% {
+opacity:.5
+}
+100% {
+opacity:1
+}
+}
+@keyframes imageAnimation {
+0% {
+opacity:0;
+animation-timing-function:ease-in
+}
+50% {
+opacity:.5
+}
+100% {
+opacity:1
+}
+}
+.no-cssanimations .cb-slideshow li span {
+	opacity:1
+}
+@media screen and (max-width:1140px) {
+.cb-slideshow li div h3 {
+font-size:140px
+}
+}
+@media screen and (max-width:600px) {
+.cb-slideshow li div h3 {
+font-size:80px
+}
+}
